@@ -132,23 +132,15 @@ for _, item in ipairs({status, hour, energy, left, right, cameraIndex, enemySide
 end
 refresh()
 
-local cameraWasActive = false
 RunService.RenderStepped:Connect(function()
     local cam = workspace.CurrentCamera
     if not cam then return end
-    if status.Value == "RUNNING" and cameraIndex.Value > 0 then
-        local anchor = anchors:FindFirstChild("Camera" .. cameraIndex.Value)
-        if anchor then
-            cam.CameraType = Enum.CameraType.Scriptable
-            cam.CFrame = anchor.CFrame
-            cameraWasActive = true
-        end
-    elseif cameraWasActive then
-        cam.CameraType = Enum.CameraType.Custom
-        local character = player.Character
-        local humanoid = character and character:FindFirstChildOfClass("Humanoid")
-        if humanoid then cam.CameraSubject = humanoid end
-        cameraWasActive = false
+    local anchorName = status.Value == "RUNNING" and cameraIndex.Value > 0
+        and ("Camera" .. cameraIndex.Value) or "OfficeView"
+    local anchor = anchors:FindFirstChild(anchorName)
+    if anchor then
+        cam.CameraType = Enum.CameraType.Scriptable
+        cam.CFrame = anchor.CFrame
     end
 end)
 

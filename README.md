@@ -1,4 +1,4 @@
 # Chernobyl: Radioactive Nights
 
 Исходники Roblox-игры, управляемые Rojo.
-Подробности о структуре проекта и сборке см. в [README_RU.md](README_RU.md).
+Запуск первой ночи и результаты проверки — [README_NIGHT1.md](README_NIGHT1.md).

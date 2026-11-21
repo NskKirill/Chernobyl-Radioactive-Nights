@@ -1,0 +1,248 @@
+{
+  "qaFile": "Night1_FINAL_20261121.rbxl",
+  "sha256": "1082B78B9F74E87B11443AB1023771B8B75CA2F91658A9E7B237157AF1A9B985",
+  "baseCommit": "3c1d0dacf8807f1d3cde027b1e1dd7f6dcdfd739",
+  "defense": {
+    "cases": 8,
+    "passed": 8,
+    "method": "Execute defense branch extracted from server source, both sides and every door combination"
+  },
+  "cameras": [
+    {
+      "CameraPosition": "-22, 10, -14",
+      "EnemySide": "LEFT",
+      "CameraIndex": 1,
+      "Hour": 0,
+      "Message": "00:00. Электричество ограничено. Следи за коридорами.",
+      "CameraType": "Scriptable",
+      "LeftDoorClosed": false,
+      "Status": "RUNNING",
+      "Energy": 99.49725828399686,
+      "EnemyStage": 0,
+      "RightDoorClosed": false
+    },
+    {
+      "CameraPosition": "22, 10, -14",
+      "EnemySide": "LEFT",
+      "CameraIndex": 2,
+      "Hour": 0,
+      "Message": "00:00. Электричество ограничено. Следи за коридорами.",
+      "CameraType": "Scriptable",
+      "LeftDoorClosed": false,
+      "Status": "RUNNING",
+      "Energy": 99.43452220699525,
+      "EnemyStage": 0,
+      "RightDoorClosed": false
+    },
+    {
+      "CameraPosition": "0, 13, -10",
+      "EnemySide": "LEFT",
+      "CameraIndex": 3,
+      "Hour": 0,
+      "Message": "00:00. Электричество ограничено. Следи за коридорами.",
+      "CameraType": "Scriptable",
+      "LeftDoorClosed": false,
+      "Status": "RUNNING",
+      "Energy": 99.34504888399542,
+      "EnemyStage": 0,
+      "RightDoorClosed": false
+    },
+    {
+      "CameraPosition": "0, 6, 6",
+      "EnemySide": "LEFT",
+      "CameraIndex": 0,
+      "Hour": 0,
+      "Message": "00:00. Электричество ограничено. Следи за коридорами.",
+      "CameraType": "Scriptable",
+      "LeftDoorClosed": false,
+      "Status": "RUNNING",
+      "Energy": 99.30468902399582,
+      "EnemyStage": 0,
+      "RightDoorClosed": false
+    }
+  ],
+  "win": {
+    "CameraPosition": "0, 6, 6",
+    "EnemySide": "LEFT",
+    "CameraIndex": 0,
+    "Hour": 6,
+    "Message": "06:00. Рассвет! Ты пережил первую ночь.",
+    "CameraType": "Scriptable",
+    "LeftDoorClosed": false,
+    "Status": "WIN",
+    "Energy": 60.64692877400713,
+    "EnemyStage": 0,
+    "RightDoorClosed": false
+  },
+  "seconds": 360.15284020001127,
+  "decisions": [
+    {
+      "hour": 0,
+      "side": "RIGHT",
+      "visibleThroughCamera": true
+    },
+    {
+      "hour": 1,
+      "side": "LEFT",
+      "visibleThroughCamera": true
+    },
+    {
+      "hour": 1,
+      "side": "RIGHT",
+      "visibleThroughCamera": true
+    },
+    {
+      "hour": 2,
+      "side": "RIGHT",
+      "visibleThroughCamera": true
+    },
+    {
+      "hour": 3,
+      "side": "RIGHT",
+      "visibleThroughCamera": true
+    },
+    {
+      "hour": 3,
+      "side": "RIGHT",
+      "visibleThroughCamera": true
+    },
+    {
+      "hour": 4,
+      "side": "LEFT",
+      "visibleThroughCamera": true
+    },
+    {
+      "hour": 5,
+      "side": "RIGHT",
+      "visibleThroughCamera": true
+    },
+    {
+      "hour": 5,
+      "side": "LEFT",
+      "visibleThroughCamera": true
+    }
+  ],
+  "wrongDoor": {
+    "side": "LEFT",
+    "result": {
+      "CameraPosition": "0, 6, 10",
+      "EnemySide": "LEFT",
+      "CameraIndex": 0,
+      "Hour": 0,
+      "Message": "Subject 06 проник через открытую дверь.",
+      "CameraType": "Scriptable",
+      "LeftDoorClosed": false,
+      "Status": "LOSE",
+      "EnemyStage": 3,
+      "Energy": 96.19554586950241,
+      "RightDoorClosed": true
+    }
+  },
+  "winRestart": {
+    "CameraPosition": "-22, 10, -14",
+    "EnemySide": "LEFT",
+    "CameraIndex": 1,
+    "Hour": 0,
+    "Message": "00:00. Электричество ограничено. Следи за коридорами.",
+    "CameraType": "Scriptable",
+    "LeftDoorClosed": true,
+    "Status": "RUNNING",
+    "Energy": 99.65410671300094,
+    "EnemyStage": 0,
+    "RightDoorClosed": true
+  },
+  "powerOut": {
+    "CameraPosition": "0, 6, 6",
+    "EnemySide": "LEFT",
+    "CameraIndex": 0,
+    "Hour": 3,
+    "Message": "Subject 06 проник через открытую дверь.",
+    "CameraType": "Scriptable",
+    "LeftDoorClosed": false,
+    "Status": "LOSE",
+    "Energy": 0,
+    "EnemyStage": 3,
+    "RightDoorClosed": false
+  },
+  "powerTrace": {
+    "initial": 99.54898055549681,
+    "zero": {
+      "camera": 0,
+      "t": 749.5283909999998,
+      "right": false,
+      "left": false,
+      "energy": 0
+    },
+    "start": 559.9526603999984
+  },
+  "powerLoseRestart": {
+    "CameraPosition": "0, 6, 6",
+    "EnemySide": "LEFT",
+    "CameraIndex": 0,
+    "Hour": 0,
+    "Message": "00:00. Электричество ограничено. Следи за коридорами.",
+    "CameraType": "Scriptable",
+    "LeftDoorClosed": false,
+    "Status": "RUNNING",
+    "Energy": 99.98944371549973,
+    "EnemyStage": 0,
+    "RightDoorClosed": false
+  },
+  "objectCounts": {
+    "map": 1,
+    "gameValuesAndRemote": 10,
+    "soundObjects": 5
+  },
+  "audioLoaded": {
+    "Win": {
+      "loaded": true,
+      "length": 0.4845625,
+      "time": 0,
+      "playing": false
+    },
+    "Alarm": {
+      "loaded": true,
+      "length": 6.9013333333333335,
+      "time": 0,
+      "playing": false
+    },
+    "Lose": {
+      "loaded": true,
+      "length": 1.0425208333333333,
+      "time": 0,
+      "playing": false
+    },
+    "BunkerHum": {
+      "loaded": true,
+      "length": 56.010104166666665,
+      "time": 11.072,
+      "playing": true
+    },
+    "Door": {
+      "loaded": true,
+      "length": 1.3954166666666667,
+      "time": 0,
+      "playing": false
+    }
+  },
+  "audioEvents": {
+    "1": {
+      "name": "BunkerHum",
+      "time": 807.3582901000045
+    },
+    "2": {
+      "name": "Door",
+      "time": 808.2247556000075
+    },
+    "3": {
+      "name": "Door",
+      "time": 808.6237636000005
+    }
+  },
+  "limitations": [
+    "No physical mobile-device test",
+    "No independent first-time-player balance test",
+    "No listening assessment or published experience permissions test",
+    "Rojo plugin resource warning 203785492 persists"
+  ]
+}
