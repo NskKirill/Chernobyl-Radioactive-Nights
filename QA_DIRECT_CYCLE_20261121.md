@@ -1,5 +1,7 @@
 # Night 1 — прямой запуск QA и полный цикл, 21 ноября 2026
 
+Позднее подтверждён PUBLIC: [PUBLICATION_NIGHT1_20261121.md](PUBLICATION_NIGHT1_20261121.md). Ожидание Data Sharing ниже — историческое состояние; пользователь разрешил оставить включённым. Облачный лимит 50 вместо 1 и публичный старт остаются открытыми.
+
 ## Сборка и сохранность
 
 Файл: C:/Users/admin/Downloads/ChernobylRadioactiveNights_Night1/outputs/night1_compact_controls_qa_20261121/Night1_COMPACT_CONTROLS_20261121.rbxl

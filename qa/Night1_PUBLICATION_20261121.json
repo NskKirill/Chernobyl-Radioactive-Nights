@@ -1,0 +1,71 @@
+{
+  "status": "PUBLIC_ACCESS_CONFIRMED",
+  "url": "https://www.roblox.com/games/89661377741376",
+  "universeId": 10778246222,
+  "placeId": 89661377741376,
+  "sourceCommit": "470efa843523fe75d65a69e7a641b23c21623c82",
+  "testedQASha256": "EFA0CC6E4338E7E67571F2CB90100CB7915FA90E574D7EFF4C1FA16537AF1B62",
+  "cloudEditorCheck": {
+    "placeVersion": 3,
+    "maxPlayers": 60,
+    "creatorId": 11878007507,
+    "placeId": 89661377741376,
+    "universeId": 10778246222,
+    "hudMatchesQA": true,
+    "serverMatchesQA": true
+  },
+  "universe": {
+    "path": "universes/10778246222",
+    "createTime": "2026-11-21T15:50:17.897Z",
+    "updateTime": "2026-11-21T16:07:57.588Z",
+    "displayName": "Chernobyl: Radioactive Nights - Night 1",
+    "description": "Первая ночь на заброшенном объекте Чернобыля. Следи за тремя камерами, управляй двумя дверями и береги энергию. Доживи до 06:00 — одна ночь длится 6 минут.\n\nОдиночная игра для ПК.\nQ / E — двери; 1 / 2 / 3 — камеры; C — в офис; N — начать или повторить.",
+    "user": "users/11878007507",
+    "visibility": "PUBLIC",
+    "voiceChatEnabled": true,
+    "ageRating": "AGE_RATING_UNSPECIFIED",
+    "desktopEnabled": true,
+    "mobileEnabled": false,
+    "tabletEnabled": false,
+    "consoleEnabled": false,
+    "vrEnabled": false,
+    "rootPlace": "universes/10778246222/places/89661377741376",
+    "templateRootPlace": ""
+  },
+  "place": {
+    "path": "universes/10778246222/places/89661377741376",
+    "createTime": "2026-11-21T15:50:17.561Z",
+    "updateTime": "2026-11-21T16:12:17.722Z",
+    "displayName": "Chernobyl: Radioactive Nights - Night 1",
+    "description": "Первая ночь на заброшенном объекте Чернобыля. Следи за тремя камерами, управляй двумя дверями и береги энергию. Доживи до 06:00 — одна ночь длится 6 минут.\n\nОдиночная игра для ПК.\nQ / E — двери; 1 / 2 / 3 — камеры; C — в офис; N — начать или повторить.",
+    "serverSize": 50,
+    "root": true,
+    "universeRuntimeCreation": false,
+    "templatePlace": ""
+  },
+  "anonymousGame": {
+    "id": 10778246222,
+    "rootPlaceId": 89661377741376,
+    "name": "Chernobyl: Radioactive Nights - Night 1",
+    "maxPlayers": 50,
+    "playing": 0,
+    "visits": 0,
+    "updated": "2026-11-21T16:12:17.722Z"
+  },
+  "userApprovedDataSharingEnabled": true,
+  "agentChangedDataSharing": false,
+  "persistedDataSharingState": "NOT_SEPARATELY_READ",
+  "readUniversePermission": "GRANTED",
+  "writePlacePermission": "NOT_GRANTED_IN_LATEST_PROBE",
+  "serverLimit": {
+    "required": 1,
+    "observed": 50,
+    "configuredByAgent": false,
+    "blockingSoloRelease": true
+  },
+  "publicServerGameplay": "NOT_TESTED",
+  "publicPageTool": "Could not open via web tool; anonymous public game metadata succeeded",
+  "protectedPlayStudio": "1754e928-b198-45cd-89b7-9cf436974055",
+  "accountAgeVerificationAutomated": false,
+  "agentVisibilityPatchSent": false
+}

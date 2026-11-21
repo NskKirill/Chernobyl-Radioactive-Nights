@@ -540,21 +540,20 @@
     "left": false
   },
   "publication": {
-    "status": "WAITING_DATA_SHARING_CHOICE",
-    "name": "Chernobyl: Radioactive Nights - Night 1",
-    "description": "Первая ночь на заброшенном объекте Чернобыля. Следи за тремя камерами, управляй двумя дверями и береги энергию. Доживи до 06:00 — одна ночь длится 6 минут.\n\nОдиночная игра для ПК.\nQ / E — двери; 1 / 2 / 3 — камеры; C — в офис; N — начать или повторить.",
-    "devicesInDraft": [
+    "status": "PUBLIC_ACCESS_CONFIRMED",
+    "url": "https://www.roblox.com/games/89661377741376",
+    "universeId": 10778246222,
+    "placeId": 89661377741376,
+    "cloudEditorVersion": 3,
+    "cloudSourcesMatchQA": true,
+    "devices": [
       "Computer"
     ],
-    "creatorInDraft": "Me",
-    "dataSharingDefaultObserved": true,
-    "dataSharingChangedByAgent": false,
-    "teamCreateDefaultObserved": true,
-    "requiredMaxPlayers": 1,
-    "maxPlayersConfigured": false,
-    "placeId": 0,
-    "universeId": 0,
-    "url": null
+    "userApprovedDataSharingEnabled": true,
+    "serverSize": 50,
+    "requiredServerSize": 1,
+    "placeWritePermissionGranted": false,
+    "publicServerGameplay": "NOT_TESTED"
   },
   "driveInputs": "Ordinary mouse/keyboard; threat chosen from visible HUD camera text; no game state writes or timer changes",
   "subsequentNightAfterWin": {
