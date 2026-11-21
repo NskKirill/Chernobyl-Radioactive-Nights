@@ -1,0 +1,280 @@
+{
+  "build": "Night1_COMPACT_CONTROLS_20261121.rbxl",
+  "sha256": "EFA0CC6E4338E7E67571F2CB90100CB7915FA90E574D7EFF4C1FA16537AF1B62",
+  "changedGameFiles": [
+    "src/StarterPlayer/StarterPlayerScripts/Night1HUD.client.lua"
+  ],
+  "sourceBaseCommit": "dd6c845bc2d62c35925ebd11b1af8c64dfd359f5",
+  "serverChanged": false,
+  "runtimeHost": "9ba7c198-79ee-4c9e-a4a8-cbcedf9ce2ca",
+  "runtimeHostFile": "Night1_PUBLISH_20261121.rbxl",
+  "runtimeSourceEquivalence": {
+    "hudMatchesCandidate": true,
+    "serverMatchesCandidate": true,
+    "worlds": 1,
+    "states": 1,
+    "remotes": 1
+  },
+  "directNewRbxlLaunch": "NOT_TESTED",
+  "mouse": [
+    {
+      "label": "mouse_StartNight",
+      "status": "RUNNING",
+      "left": false,
+      "right": false,
+      "camera": 0,
+      "visible": [
+        "LeftDoor",
+        "RightDoor",
+        "Camera1",
+        "Camera2",
+        "Camera3",
+        "CloseCamera"
+      ]
+    },
+    {
+      "label": "mouse_LeftDoor",
+      "status": "RUNNING",
+      "left": true,
+      "right": false,
+      "camera": 0,
+      "visible": [
+        "LeftDoor",
+        "RightDoor",
+        "Camera1",
+        "Camera2",
+        "Camera3",
+        "CloseCamera"
+      ]
+    },
+    {
+      "label": "mouse_RightDoor",
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 0,
+      "visible": [
+        "LeftDoor",
+        "RightDoor",
+        "Camera1",
+        "Camera2",
+        "Camera3",
+        "CloseCamera"
+      ]
+    },
+    {
+      "label": "mouse_Camera1",
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 1,
+      "visible": [
+        "LeftDoor",
+        "RightDoor",
+        "Camera1",
+        "Camera2",
+        "Camera3",
+        "CloseCamera"
+      ]
+    },
+    {
+      "label": "mouse_Camera2",
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 2,
+      "visible": [
+        "LeftDoor",
+        "RightDoor",
+        "Camera1",
+        "Camera2",
+        "Camera3",
+        "CloseCamera"
+      ]
+    },
+    {
+      "label": "mouse_Camera3",
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 3,
+      "visible": [
+        "LeftDoor",
+        "RightDoor",
+        "Camera1",
+        "Camera2",
+        "Camera3",
+        "CloseCamera"
+      ]
+    },
+    {
+      "label": "mouse_CloseCamera",
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 0,
+      "visible": [
+        "LeftDoor",
+        "RightDoor",
+        "Camera1",
+        "Camera2",
+        "Camera3",
+        "CloseCamera"
+      ]
+    },
+    {
+      "label": "mouse_LeftDoor_open",
+      "status": "RUNNING",
+      "left": false,
+      "right": true,
+      "camera": 0,
+      "visible": [
+        "LeftDoor",
+        "RightDoor",
+        "Camera1",
+        "Camera2",
+        "Camera3",
+        "CloseCamera"
+      ]
+    },
+    {
+      "label": "mouse_RightDoor_open",
+      "status": "RUNNING",
+      "left": false,
+      "right": false,
+      "camera": 0,
+      "visible": [
+        "LeftDoor",
+        "RightDoor",
+        "Camera1",
+        "Camera2",
+        "Camera3",
+        "CloseCamera"
+      ]
+    }
+  ],
+  "keyboard": [
+    {
+      "key": "Q",
+      "status": "RUNNING",
+      "left": true,
+      "right": false,
+      "camera": 0
+    },
+    {
+      "key": "E",
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 0
+    },
+    {
+      "key": "One",
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 1
+    },
+    {
+      "key": "Two",
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 2
+    },
+    {
+      "key": "Three",
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 3
+    },
+    {
+      "key": "C",
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 0
+    },
+    {
+      "key": "Q",
+      "status": "RUNNING",
+      "left": false,
+      "right": true,
+      "camera": 0
+    },
+    {
+      "key": "E",
+      "status": "RUNNING",
+      "left": false,
+      "right": false,
+      "camera": 0
+    }
+  ],
+  "layout": [
+    {
+      "preset": "VGA",
+      "viewport": [
+        639,
+        479
+      ],
+      "status": "RUNNING",
+      "controls": [
+        420,
+        86
+      ],
+      "visible": 6,
+      "badText": [],
+      "overflow": [],
+      "overlaps": [],
+      "pass": true
+    },
+    {
+      "preset": "HD 720",
+      "viewport": [
+        1279,
+        720
+      ],
+      "status": "RUNNING",
+      "controls": [
+        420,
+        86
+      ],
+      "visible": 6,
+      "badText": [],
+      "overflow": [],
+      "overlaps": [],
+      "pass": true
+    },
+    {
+      "preset": "HD 1080",
+      "viewport": [
+        1919,
+        1079
+      ],
+      "status": "RUNNING",
+      "controls": [
+        420,
+        86
+      ],
+      "visible": 6,
+      "badText": [],
+      "overflow": [],
+      "overlaps": [],
+      "pass": true
+    }
+  ],
+  "naturalLose": "LOSE",
+  "mouseRestart": "RUNNING",
+  "keyboardRestart": "RUNNING",
+  "output": {
+    "gameErrors": 0,
+    "existingRojoAsset203785492Messages": 3
+  },
+  "notTested": [
+    "full WIN on candidate",
+    "physical mobile/gamepad",
+    "human listening",
+    "target experience audio access"
+  ]
+}

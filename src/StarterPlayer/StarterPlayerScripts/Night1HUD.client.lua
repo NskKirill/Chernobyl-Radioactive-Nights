@@ -67,49 +67,80 @@ threat.Name = "Threat"
 notice.Name = "Notice"
 notice.TextYAlignment = Enum.TextYAlignment.Top
 
-local controls = panel("Controls", UDim2.new(0.94, 0, 0, 159), UDim2.new(0.03, 0, 0.975, 0), Vector2.new(0, 1))
+local controls = panel("Controls", UDim2.new(0.94, 0, 0, 86), UDim2.new(0.03, 0, 0.975, 0), Vector2.new(0, 1))
 local limit = Instance.new("UISizeConstraint")
-limit.MaxSize = Vector2.new(480, 159)
+limit.MaxSize = Vector2.new(420, 86)
 limit.Parent = controls
-local layout = Instance.new("UIGridLayout")
-layout.SortOrder = Enum.SortOrder.LayoutOrder
-layout.CellSize = UDim2.new(0.315, 0, 0, 46)
-layout.CellPadding = UDim2.new(0.013, 0, 0, 5)
-layout.Parent = controls
 
-local function button(text, command, order)
+local function controlRow(name, y, columns)
+    local row = Instance.new("Frame")
+    row.Name = name
+    row.BackgroundTransparency = 1
+    row.Size = UDim2.new(1, -16, 0, 32)
+    row.Position = UDim2.fromOffset(8, y)
+    row.Parent = controls
+    local layout = Instance.new("UIGridLayout")
+    layout.SortOrder = Enum.SortOrder.LayoutOrder
+    layout.FillDirectionMaxCells = columns
+    -- Leave one pixel per cell for layout rounding at fractional viewport scales.
+    layout.CellSize = UDim2.new(1 / columns, -6 * (columns - 1) / columns - 1, 0, 32)
+    layout.CellPadding = UDim2.fromOffset(6, 0)
+    layout.Parent = row
+    return row
+end
+local doors = controlRow("Doors", 8, 2)
+local cameras = controlRow("Cameras", 46, 4)
+
+local function button(parent, text, command, order)
     local b = Instance.new("TextButton")
     b.Name = command
     b.Text = text
     b.LayoutOrder = order
-    b.TextScaled = true
-    b.TextWrapped = true
+    b.TextSize = 14
+    b.TextScaled = false
+    b.TextWrapped = false
     b.Font = Enum.Font.GothamBold
     b.TextColor3 = Color3.fromRGB(234, 242, 231)
     b.BackgroundColor3 = Color3.fromRGB(44, 61, 54)
     b.BorderSizePixel = 0
-    b.Parent = controls
+    b.Parent = parent
     local c = Instance.new("UICorner")
     c.CornerRadius = UDim.new(0, 7)
     c.Parent = b
     b.Activated:Connect(function() action:FireServer(command) end)
     return b
 end
-local leftButton = button("Левая дверь", "LeftDoor", 1)
-local rightButton = button("Правая дверь", "RightDoor", 2)
-local startButton = button("Начать ночь", "StartNight", 3)
-button("1 · ЛЕВЫЙ\nКОРИДОР", "Camera1", 4)
-button("2 · ПРАВЫЙ\nКОРИДОР", "Camera2", 5)
-button("3 · ОБЗОР\nОФИСА", "Camera3", 6)
-button("C · УБРАТЬ\nКАМЕРЫ", "CloseCamera", 7)
+local leftButton = button(doors, "Левая дверь", "LeftDoor", 1)
+local rightButton = button(doors, "Правая дверь", "RightDoor", 2)
+local startButton = button(controls, "N · Начать ночь", "StartNight", 1)
+startButton.Position = UDim2.fromOffset(8, 8)
+startButton.Size = UDim2.new(1, -16, 0, 32)
+local cameraButtons = {
+    button(cameras, "1 · Левый", "Camera1", 1),
+    button(cameras, "2 · Правый", "Camera2", 2),
+    button(cameras, "3 · Обзор", "Camera3", 3),
+}
+local closeCameraButton = button(cameras, "C · В офис", "CloseCamera", 4)
 
 local function refresh()
     local result = status.Value
     clock.Text = string.format("%02d:00  •  Энергия: %d%%", hour.Value, math.floor(energy.Value + 0.5))
-    leftButton.Text = "Q · ЛЕВАЯ\n" .. (left.Value and "ЗАКРЫТА" or "ОТКРЫТА")
-    rightButton.Text = "E · ПРАВАЯ\n" .. (right.Value and "ЗАКРЫТА" or "ОТКРЫТА")
-    startButton.Text = result == "READY" and "N · НАЧАТЬ\nНОЧЬ" or (result == "RUNNING" and "ИДЁТ НОЧЬ" or "N · ЗАНОВО")
-    startButton.BackgroundColor3 = result == "RUNNING" and Color3.fromRGB(62, 69, 65) or Color3.fromRGB(36, 110, 75)
+    local running = result == "RUNNING"
+    doors.Visible = running
+    cameras.Visible = running
+    startButton.Visible = not running
+    controls.Size = UDim2.new(0.94, 0, 0, running and 86 or 48)
+    limit.MaxSize = running and Vector2.new(420, 86) or Vector2.new(240, 48)
+    leftButton.Text = "Q · Левая: " .. (left.Value and "закрыта" or "открыта")
+    rightButton.Text = "E · Правая: " .. (right.Value and "закрыта" or "открыта")
+    startButton.Text = result == "READY" and "N · Начать ночь" or "N · Повторить"
+    startButton.BackgroundColor3 = Color3.fromRGB(36, 110, 75)
+    local idleColor = Color3.fromRGB(44, 61, 54)
+    local selectedColor = Color3.fromRGB(36, 110, 75)
+    for index, cameraButton in ipairs(cameraButtons) do
+        cameraButton.BackgroundColor3 = cameraIndex.Value == index and selectedColor or idleColor
+    end
+    closeCameraButton.BackgroundColor3 = cameraIndex.Value == 0 and selectedColor or idleColor
     if result == "READY" then
         threat.Text = "ЦЕЛЬ: ДОЖИВИ ДО 06:00"
     elseif result == "WIN" then
