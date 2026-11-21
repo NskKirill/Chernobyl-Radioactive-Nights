@@ -1,0 +1,1532 @@
+{
+  "date": "2026-11-21",
+  "codeCommit": "7ac241ebf9e9bc3e103308791e79b26bc5107daa",
+  "build": "Night1_RELEASE_20261121.rbxl",
+  "sha256": "919DC3D77195D079EF8EB312F2E521664BC0C5B5700D6C874B6FF69F52A5FF07",
+  "sourcesMatch": true,
+  "codeChanges": false,
+  "method": "Ordinary mouse button clicks in Studio; wait for replicated acknowledgement and visible camera HUD. No administrative changes to gameplay values.",
+  "baselineMouseTrace": {
+    "events": {
+      "1": {
+        "kind": "button",
+        "name": "StartNight",
+        "t": 2236.2028792000056
+      },
+      "2": {
+        "value": "RUNNING",
+        "kind": "state",
+        "name": "Status",
+        "t": 2236.267928400004
+      },
+      "3": {
+        "value": "00:00. Электричество ограничено. Следи за коридорами.",
+        "kind": "state",
+        "name": "Message",
+        "t": 2236.2685029999993
+      },
+      "4": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 2237.0023116000084
+      },
+      "5": {
+        "value": true,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 2237.067715199999
+      },
+      "6": {
+        "kind": "button",
+        "name": "RightDoor",
+        "t": 2237.885807800005
+      },
+      "7": {
+        "value": true,
+        "kind": "state",
+        "name": "RightDoorClosed",
+        "t": 2237.9508361000044
+      },
+      "8": {
+        "kind": "button",
+        "name": "Camera1",
+        "t": 2238.7530047000037
+      },
+      "9": {
+        "value": 1,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 2238.816896000004
+      },
+      "10": {
+        "kind": "button",
+        "name": "Camera2",
+        "t": 2239.5847127000015
+      },
+      "11": {
+        "value": 2,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 2239.6513615000003
+      },
+      "12": {
+        "kind": "button",
+        "name": "Camera3",
+        "t": 2240.418770400007
+      },
+      "13": {
+        "value": 3,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 2240.48356220001
+      },
+      "14": {
+        "kind": "button",
+        "name": "CloseCamera",
+        "t": 2241.252395400006
+      },
+      "15": {
+        "value": 0,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 2241.3173165000044
+      },
+      "16": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 2242.835791800011
+      },
+      "17": {
+        "value": false,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 2242.900701000006
+      },
+      "18": {
+        "kind": "button",
+        "name": "RightDoor",
+        "t": 2243.66847460001
+      },
+      "19": {
+        "value": false,
+        "kind": "state",
+        "name": "RightDoorClosed",
+        "t": 2243.7337415000075
+      }
+    },
+    "sounds": {
+      "1": {
+        "name": "BunkerHum",
+        "t": 2236.269004700007
+      },
+      "2": {
+        "name": "Door",
+        "t": 2237.0673829000007
+      },
+      "3": {
+        "name": "Door",
+        "t": 2237.950318000003
+      },
+      "4": {
+        "name": "Door",
+        "t": 2242.9006351999997
+      },
+      "5": {
+        "name": "Door",
+        "t": 2243.7336815000017
+      }
+    }
+  },
+  "failedFixture": {
+    "reason": "The test waited 0.95 seconds instead of awaiting acknowledgment. Camera2 arrived after 1.299 seconds; controller aborted before closing the door. This attempt is NOT a successful round.",
+    "trace": {
+      "events": {
+        "1": {
+          "kind": "button",
+          "name": "StartNight",
+          "t": 4365.816999200004
+        },
+        "2": {
+          "value": "RUNNING",
+          "kind": "state",
+          "name": "Status",
+          "t": 4366.332330200006
+        },
+        "3": {
+          "value": 0,
+          "kind": "state",
+          "name": "EnemyStage",
+          "t": 4366.3339702000085
+        },
+        "4": {
+          "value": "00:00. Электричество ограничено. Следи за коридорами.",
+          "kind": "state",
+          "name": "Message",
+          "t": 4366.334254900008
+        },
+        "5": {
+          "value": "RIGHT",
+          "kind": "state",
+          "name": "EnemySide",
+          "t": 4379.531036700006
+        },
+        "6": {
+          "value": 1,
+          "kind": "state",
+          "name": "EnemyStage",
+          "t": 4379.531318399997
+        },
+        "7": {
+          "value": 2,
+          "kind": "state",
+          "name": "EnemyStage",
+          "t": 4392.447853899997
+        },
+        "8": {
+          "value": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+          "kind": "state",
+          "name": "Message",
+          "t": 4392.4479063000035
+        },
+        "9": {
+          "kind": "button",
+          "name": "Camera1",
+          "t": 4396.181323700002
+        },
+        "10": {
+          "value": 1,
+          "kind": "state",
+          "name": "CameraIndex",
+          "t": 4396.649620199998
+        },
+        "11": {
+          "kind": "button",
+          "name": "Camera2",
+          "t": 4397.832377400002
+        },
+        "12": {
+          "value": 2,
+          "kind": "state",
+          "name": "CameraIndex",
+          "t": 4399.131264099997
+        },
+        "13": {
+          "value": 3,
+          "kind": "state",
+          "name": "EnemyStage",
+          "t": 4405.39664810001
+        },
+        "14": {
+          "value": "LOSE",
+          "kind": "state",
+          "name": "Status",
+          "t": 4405.396827900011
+        },
+        "15": {
+          "value": 0,
+          "kind": "state",
+          "name": "CameraIndex",
+          "t": 4405.396968700006
+        },
+        "16": {
+          "value": "Subject 06 проник через открытую дверь.",
+          "kind": "state",
+          "name": "Message",
+          "t": 4405.398084900007
+        }
+      },
+      "sounds": {
+        "1": {
+          "name": "BunkerHum",
+          "t": 4366.334432600008
+        },
+        "2": {
+          "name": "Alarm",
+          "t": 4392.448980700006
+        },
+        "3": {
+          "name": "Lose",
+          "t": 4405.398259599999
+        }
+      }
+    }
+  },
+  "profile": {
+    "InboundNetworkMinDelayMs": 150,
+    "OutboundNetworkMinDelayMs": 180,
+    "InboundNetworkJitterMs": 70,
+    "OutboundNetworkJitterMs": 90,
+    "InboundNetworkLossPercent": 0.5,
+    "OutboundNetworkLossPercent": 0.5
+  },
+  "originalNetwork": {
+    "InboundNetworkJitterMs": 0,
+    "OutboundNetworkJitterMs": 0,
+    "InboundNetworkMinDelayMs": 0,
+    "OutboundNetworkLossPercent": 0,
+    "InboundNetworkLossPercent": 0,
+    "OutboundNetworkMinDelayMs": 0
+  },
+  "pingSamplesMs": [
+    401.4320068359375,
+    404.0690002441406,
+    379.7170104980469,
+    401.56298828125,
+    390.0979919433594,
+    397.6709899902344
+  ],
+  "round": {
+    "result": {
+      "message": "06:00. Рассвет! Ты пережил первую ночь.",
+      "camera": 0,
+      "hour": 6,
+      "status": "WIN",
+      "right": false,
+      "energy": 39.701602578995946,
+      "left": false
+    },
+    "clientObservedSeconds": 360.1695137999923,
+    "deflections": 9
+  },
+  "winRestart": {
+    "CameraPosition": "0, 6, 6",
+    "EnemySide": "LEFT",
+    "CameraIndex": 0,
+    "Hour": 0,
+    "Message": "00:00. Электричество ограничено. Следи за коридорами.",
+    "CameraType": "Scriptable",
+    "LeftDoorClosed": false,
+    "Status": "RUNNING",
+    "EnemyStage": 0,
+    "Energy": 99.9977300514999,
+    "RightDoorClosed": false
+  },
+  "naturalLose": {
+    "CameraPosition": "0, 6, 6",
+    "EnemySide": "LEFT",
+    "CameraIndex": 0,
+    "Hour": 0,
+    "Message": "Subject 06 проник через открытую дверь.",
+    "CameraType": "Scriptable",
+    "LeftDoorClosed": false,
+    "Status": "LOSE",
+    "EnemyStage": 3,
+    "Energy": 98.24207909500034,
+    "RightDoorClosed": false
+  },
+  "loseRestart": {
+    "CameraPosition": "0, 6, 6",
+    "EnemySide": "LEFT",
+    "CameraIndex": 0,
+    "Hour": 0,
+    "Message": "00:00. Электричество ограничено. Следи за коридорами.",
+    "CameraType": "Scriptable",
+    "LeftDoorClosed": false,
+    "Status": "RUNNING",
+    "EnemyStage": 0,
+    "Energy": 99.99881479900024,
+    "RightDoorClosed": false
+  },
+  "audio": {
+    "samples": 8565,
+    "levels": {
+      "Lose": {
+        "volume": 0.3499999940395355,
+        "loaded": true,
+        "length": 1.0425208333333333,
+        "peak": 127.99511849880219,
+        "maxPosition": 1.024
+      },
+      "Alarm": {
+        "volume": 0.23999999463558197,
+        "loaded": true,
+        "length": 6.9013333333333335,
+        "peak": 89.30779993534088,
+        "maxPosition": 1.899
+      },
+      "Win": {
+        "volume": 0.3499999940395355,
+        "loaded": true,
+        "length": 0.4845625,
+        "peak": 123.40071052312851,
+        "maxPosition": 0.427
+      },
+      "BunkerHum": {
+        "volume": 0.11999999731779099,
+        "loaded": true,
+        "length": 56.010104166666665,
+        "peak": 61.381006613373756,
+        "maxPosition": 56.006
+      },
+      "Door": {
+        "volume": 0.3499999940395355,
+        "loaded": true,
+        "length": 1.3954166666666667,
+        "peak": 184.22284722328186,
+        "maxPosition": 1.395
+      }
+    },
+    "started": 4420.367422199997
+  },
+  "counts": {
+    "sounds": 5,
+    "memory": 721.8046875,
+    "maps": 1,
+    "stateFolders": 1,
+    "remotes": 1,
+    "huds": 1
+  },
+  "memoryBaseline": {
+    "time": 4511.961431700009,
+    "memory": 728.43359375
+  },
+  "inputAcknowledgments": [
+    {
+      "button": "StartNight",
+      "seconds": 0.48278099999879487
+    },
+    {
+      "button": "Camera1",
+      "seconds": 0.46591940001235344
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.3824824000039371
+    },
+    {
+      "button": "CloseCamera",
+      "seconds": 0.49992920001386665
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.4817899000045145
+    },
+    {
+      "button": "Camera1",
+      "seconds": 0.5144929999951273
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.433146499999566
+    },
+    {
+      "button": "CloseCamera",
+      "seconds": 0.5001887999969767
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.4832769000058761
+    },
+    {
+      "button": "Camera1",
+      "seconds": 0.8646440000011353
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.4322859000094468
+    },
+    {
+      "button": "CloseCamera",
+      "seconds": 0.4989625000016531
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.44884510000701994
+    },
+    {
+      "button": "Camera1",
+      "seconds": 0.46529130000271834
+    },
+    {
+      "button": "Camera2",
+      "seconds": 0.43213939999986906
+    },
+    {
+      "button": "RightDoor",
+      "seconds": 0.49910950000048615
+    },
+    {
+      "button": "CloseCamera",
+      "seconds": 0.41655499998887535
+    },
+    {
+      "button": "RightDoor",
+      "seconds": 0.4500479999987874
+    },
+    {
+      "button": "Camera1",
+      "seconds": 0.4324155999929644
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.4826917000027606
+    },
+    {
+      "button": "CloseCamera",
+      "seconds": 0.4982939999899827
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.49923600000329316
+    },
+    {
+      "button": "Camera1",
+      "seconds": 0.5153883000020869
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.44798810000065714
+    },
+    {
+      "button": "CloseCamera",
+      "seconds": 0.4473485000053188
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.4829942999931518
+    },
+    {
+      "button": "Camera1",
+      "seconds": 0.46676329999172594
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.4486581999954069
+    },
+    {
+      "button": "CloseCamera",
+      "seconds": 0.4975616000010632
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.4492523000080837
+    },
+    {
+      "button": "Camera1",
+      "seconds": 0.43305429999600165
+    },
+    {
+      "button": "Camera2",
+      "seconds": 0.4981368000007933
+    },
+    {
+      "button": "RightDoor",
+      "seconds": 0.46753870000247844
+    },
+    {
+      "button": "CloseCamera",
+      "seconds": 0.48338210000656545
+    },
+    {
+      "button": "RightDoor",
+      "seconds": 0.5498202000017045
+    },
+    {
+      "button": "Camera1",
+      "seconds": 0.5659381000004942
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.48020970000652596
+    },
+    {
+      "button": "CloseCamera",
+      "seconds": 0.5156010999926366
+    },
+    {
+      "button": "LeftDoor",
+      "seconds": 0.4665451999899233
+    }
+  ],
+  "trace": {
+    "events": {
+      "1": {
+        "kind": "button",
+        "name": "StartNight",
+        "t": 4511.276524900008
+      },
+      "2": {
+        "value": "RUNNING",
+        "kind": "state",
+        "name": "Status",
+        "t": 4511.759305900006
+      },
+      "3": {
+        "value": 0,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4511.759611800007
+      },
+      "4": {
+        "value": "LEFT",
+        "kind": "state",
+        "name": "EnemySide",
+        "t": 4511.759621999998
+      },
+      "5": {
+        "value": "00:00. Электричество ограничено. Следи за коридорами.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4511.759633000009
+      },
+      "6": {
+        "value": 1,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4524.875459700008
+      },
+      "7": {
+        "value": 2,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4537.875918100006
+      },
+      "8": {
+        "value": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4537.87597790001
+      },
+      "9": {
+        "kind": "button",
+        "name": "Camera1",
+        "t": 4538.859334599998
+      },
+      "10": {
+        "value": 1,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4539.32525400001
+      },
+      "11": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4540.025652199998
+      },
+      "12": {
+        "value": true,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4540.408134600002
+      },
+      "13": {
+        "kind": "button",
+        "name": "CloseCamera",
+        "t": 4541.025959699997
+      },
+      "14": {
+        "value": 0,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4541.525888900011
+      },
+      "15": {
+        "value": 0,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4551.00755770001
+      },
+      "16": {
+        "value": "Удар по закрытой двери! Subject 06 отступил.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4551.007659499999
+      },
+      "17": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4553.093328200004
+      },
+      "18": {
+        "value": false,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4553.575118100009
+      },
+      "19": {
+        "value": 1,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4563.874331800005
+      },
+      "20": {
+        "value": 1,
+        "kind": "state",
+        "name": "Hour",
+        "t": 4571.858230500002
+      },
+      "21": {
+        "value": 2,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4576.956814999998
+      },
+      "22": {
+        "value": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4576.9568822
+      },
+      "23": {
+        "kind": "button",
+        "name": "Camera1",
+        "t": 4578.158830400003
+      },
+      "24": {
+        "value": 1,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4578.6733233999985
+      },
+      "25": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4579.374201800005
+      },
+      "26": {
+        "value": true,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4579.807348300004
+      },
+      "27": {
+        "kind": "button",
+        "name": "CloseCamera",
+        "t": 4580.440608600009
+      },
+      "28": {
+        "value": 0,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4580.940797400006
+      },
+      "29": {
+        "value": 0,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4589.923632100006
+      },
+      "30": {
+        "value": "Удар по закрытой двери! Subject 06 отступил.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4589.923698800005
+      },
+      "31": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4592.424157500005
+      },
+      "32": {
+        "value": false,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4592.907434400011
+      },
+      "33": {
+        "value": 1,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4602.822741000011
+      },
+      "34": {
+        "value": 2,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4615.922848700007
+      },
+      "35": {
+        "value": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4615.922926900006
+      },
+      "36": {
+        "kind": "button",
+        "name": "Camera1",
+        "t": 4617.391030500003
+      },
+      "37": {
+        "value": 1,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4618.255674500004
+      },
+      "38": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4618.9570045
+      },
+      "39": {
+        "value": true,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4619.3892904000095
+      },
+      "40": {
+        "kind": "button",
+        "name": "CloseCamera",
+        "t": 4619.989983000007
+      },
+      "41": {
+        "value": 0,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4620.488945500008
+      },
+      "42": {
+        "value": 0,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4628.9225618000055
+      },
+      "43": {
+        "value": "Удар по закрытой двери! Subject 06 отступил.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4628.9226241
+      },
+      "44": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4629.738896800001
+      },
+      "45": {
+        "value": false,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4630.187741900008
+      },
+      "46": {
+        "value": 2,
+        "kind": "state",
+        "name": "Hour",
+        "t": 4631.839097300006
+      },
+      "47": {
+        "value": "RIGHT",
+        "kind": "state",
+        "name": "EnemySide",
+        "t": 4641.920631200002
+      },
+      "48": {
+        "value": 1,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4641.92065130001
+      },
+      "49": {
+        "value": 2,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4654.838320199997
+      },
+      "50": {
+        "value": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4654.838415200007
+      },
+      "51": {
+        "kind": "button",
+        "name": "Camera1",
+        "t": 4656.938170399997
+      },
+      "52": {
+        "value": 1,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4657.4034617
+      },
+      "53": {
+        "kind": "button",
+        "name": "Camera2",
+        "t": 4658.122437400001
+      },
+      "54": {
+        "value": 2,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4658.554576800001
+      },
+      "55": {
+        "kind": "button",
+        "name": "RightDoor",
+        "t": 4659.289536900003
+      },
+      "56": {
+        "value": true,
+        "kind": "state",
+        "name": "RightDoorClosed",
+        "t": 4659.788646400004
+      },
+      "57": {
+        "kind": "button",
+        "name": "CloseCamera",
+        "t": 4660.4213623000105
+      },
+      "58": {
+        "value": 0,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4660.837917299999
+      },
+      "59": {
+        "value": 0,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4667.853685499998
+      },
+      "60": {
+        "value": "Удар по закрытой двери! Subject 06 отступил.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4667.853743600004
+      },
+      "61": {
+        "kind": "button",
+        "name": "RightDoor",
+        "t": 4670.137845500009
+      },
+      "62": {
+        "value": false,
+        "kind": "state",
+        "name": "RightDoorClosed",
+        "t": 4670.587893500007
+      },
+      "63": {
+        "value": "LEFT",
+        "kind": "state",
+        "name": "EnemySide",
+        "t": 4680.8372310999985
+      },
+      "64": {
+        "value": 1,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4680.837268700008
+      },
+      "65": {
+        "value": 3,
+        "kind": "state",
+        "name": "Hour",
+        "t": 4691.952068099999
+      },
+      "66": {
+        "value": 2,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4693.868537400005
+      },
+      "67": {
+        "value": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4693.868589000005
+      },
+      "68": {
+        "kind": "button",
+        "name": "Camera1",
+        "t": 4695.036563500005
+      },
+      "69": {
+        "value": 1,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4695.468979099998
+      },
+      "70": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4696.186290400001
+      },
+      "71": {
+        "value": true,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4696.668982100004
+      },
+      "72": {
+        "kind": "button",
+        "name": "CloseCamera",
+        "t": 4697.269952700008
+      },
+      "73": {
+        "value": 0,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4697.768246699998
+      },
+      "74": {
+        "value": 0,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4706.8516867
+      },
+      "75": {
+        "value": "Удар по закрытой двери! Subject 06 отступил.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4706.8517784
+      },
+      "76": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4709.270250000001
+      },
+      "77": {
+        "value": false,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4709.769486000005
+      },
+      "78": {
+        "value": 1,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4719.985673500007
+      },
+      "79": {
+        "value": 2,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4732.835239599997
+      },
+      "80": {
+        "value": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4732.835296400008
+      },
+      "81": {
+        "kind": "button",
+        "name": "Camera1",
+        "t": 4734.268451299999
+      },
+      "82": {
+        "value": 1,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4734.783839600001
+      },
+      "83": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4735.519283900008
+      },
+      "84": {
+        "value": true,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4735.967272000009
+      },
+      "85": {
+        "kind": "button",
+        "name": "CloseCamera",
+        "t": 4736.5696245
+      },
+      "86": {
+        "value": 0,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4737.016973000005
+      },
+      "87": {
+        "value": 0,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4745.767352900002
+      },
+      "88": {
+        "value": "Удар по закрытой двери! Subject 06 отступил.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4745.767443100005
+      },
+      "89": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4746.384323000006
+      },
+      "90": {
+        "value": false,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4746.867317299999
+      },
+      "91": {
+        "value": 4,
+        "kind": "state",
+        "name": "Hour",
+        "t": 4751.89979760001
+      },
+      "92": {
+        "value": 1,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4758.832708200003
+      },
+      "93": {
+        "value": 2,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4771.899386800011
+      },
+      "94": {
+        "value": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4771.899445700008
+      },
+      "95": {
+        "kind": "button",
+        "name": "Camera1",
+        "t": 4773.632736800006
+      },
+      "96": {
+        "value": 1,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4774.099500099997
+      },
+      "97": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4774.8334063000075
+      },
+      "98": {
+        "value": true,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4775.282064500003
+      },
+      "99": {
+        "kind": "button",
+        "name": "CloseCamera",
+        "t": 4775.901039000004
+      },
+      "100": {
+        "value": 0,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4776.398600600005
+      },
+      "101": {
+        "value": 0,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4784.982521600003
+      },
+      "102": {
+        "value": "Удар по закрытой двери! Subject 06 отступил.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4784.982583600009
+      },
+      "103": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4785.6834026
+      },
+      "104": {
+        "value": false,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4786.132654900008
+      },
+      "105": {
+        "value": "RIGHT",
+        "kind": "state",
+        "name": "EnemySide",
+        "t": 4797.780807100004
+      },
+      "106": {
+        "value": 1,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4797.780845900008
+      },
+      "107": {
+        "value": 2,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4810.830677400008
+      },
+      "108": {
+        "value": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4810.8307489
+      },
+      "109": {
+        "value": 5,
+        "kind": "state",
+        "name": "Hour",
+        "t": 4811.864192100009
+      },
+      "110": {
+        "kind": "button",
+        "name": "Camera1",
+        "t": 4812.865081700002
+      },
+      "111": {
+        "value": 1,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4813.298135999998
+      },
+      "112": {
+        "kind": "button",
+        "name": "Camera2",
+        "t": 4814.049086500003
+      },
+      "113": {
+        "value": 2,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4814.547223300004
+      },
+      "114": {
+        "kind": "button",
+        "name": "RightDoor",
+        "t": 4815.281159999999
+      },
+      "115": {
+        "value": true,
+        "kind": "state",
+        "name": "RightDoorClosed",
+        "t": 4815.748698700001
+      },
+      "116": {
+        "kind": "button",
+        "name": "CloseCamera",
+        "t": 4816.397799099999
+      },
+      "117": {
+        "value": 0,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4816.881181200006
+      },
+      "118": {
+        "value": 0,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4823.880483600005
+      },
+      "119": {
+        "value": "Удар по закрытой двери! Subject 06 отступил.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4823.880650000006
+      },
+      "120": {
+        "kind": "button",
+        "name": "RightDoor",
+        "t": 4826.397588899999
+      },
+      "121": {
+        "value": false,
+        "kind": "state",
+        "name": "RightDoorClosed",
+        "t": 4826.947409100001
+      },
+      "122": {
+        "value": "LEFT",
+        "kind": "state",
+        "name": "EnemySide",
+        "t": 4836.9131868999975
+      },
+      "123": {
+        "value": 1,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4836.913216100002
+      },
+      "124": {
+        "value": 2,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4849.862286000003
+      },
+      "125": {
+        "value": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4849.862368500006
+      },
+      "126": {
+        "kind": "button",
+        "name": "Camera1",
+        "t": 4851.514084900002
+      },
+      "127": {
+        "value": 1,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4852.080023000002
+      },
+      "128": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4852.799137900001
+      },
+      "129": {
+        "value": true,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4853.279347600008
+      },
+      "130": {
+        "kind": "button",
+        "name": "CloseCamera",
+        "t": 4853.896418500008
+      },
+      "131": {
+        "value": 0,
+        "kind": "state",
+        "name": "CameraIndex",
+        "t": 4854.4120196
+      },
+      "132": {
+        "value": 0,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4862.896073399999
+      },
+      "133": {
+        "value": "Удар по закрытой двери! Subject 06 отступил.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4862.896187700011
+      },
+      "134": {
+        "kind": "button",
+        "name": "LeftDoor",
+        "t": 4863.7302408000105
+      },
+      "135": {
+        "value": false,
+        "kind": "state",
+        "name": "LeftDoorClosed",
+        "t": 4864.196786
+      },
+      "136": {
+        "value": 6,
+        "kind": "state",
+        "name": "Hour",
+        "t": 4871.928647400011
+      },
+      "137": {
+        "value": "WIN",
+        "kind": "state",
+        "name": "Status",
+        "t": 4871.928819699999
+      },
+      "138": {
+        "value": "06:00. Рассвет! Ты пережил первую ночь.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4871.928968499997
+      },
+      "139": {
+        "kind": "button",
+        "name": "StartNight",
+        "t": 4873.747119100008
+      },
+      "140": {
+        "value": "RUNNING",
+        "kind": "state",
+        "name": "Status",
+        "t": 4874.211756100005
+      },
+      "141": {
+        "value": 0,
+        "kind": "state",
+        "name": "Hour",
+        "t": 4874.212027500005
+      },
+      "142": {
+        "value": "00:00. Электричество ограничено. Следи за коридорами.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4874.212156000009
+      },
+      "143": {
+        "value": 1,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4887.277283100004
+      },
+      "144": {
+        "value": 2,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4900.2434564
+      },
+      "145": {
+        "value": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4900.243542199998
+      },
+      "146": {
+        "value": 3,
+        "kind": "state",
+        "name": "EnemyStage",
+        "t": 4913.277754399998
+      },
+      "147": {
+        "value": "LOSE",
+        "kind": "state",
+        "name": "Status",
+        "t": 4913.277814300003
+      },
+      "148": {
+        "value": "Subject 06 проник через открытую дверь.",
+        "kind": "state",
+        "name": "Message",
+        "t": 4913.2780410999985
+      }
+    },
+    "sounds": {
+      "1": {
+        "name": "BunkerHum",
+        "t": 4511.759698399997
+      },
+      "2": {
+        "name": "Alarm",
+        "t": 4537.876124000002
+      },
+      "3": {
+        "name": "Door",
+        "t": 4540.408083400005
+      },
+      "4": {
+        "name": "Door",
+        "t": 4553.575067099999
+      },
+      "5": {
+        "name": "Alarm",
+        "t": 4576.957087200004
+      },
+      "6": {
+        "name": "Door",
+        "t": 4579.807304700007
+      },
+      "7": {
+        "name": "Door",
+        "t": 4592.907387200001
+      },
+      "8": {
+        "name": "Alarm",
+        "t": 4615.923123900007
+      },
+      "9": {
+        "name": "Door",
+        "t": 4619.389248599997
+      },
+      "10": {
+        "name": "Door",
+        "t": 4630.1876949
+      },
+      "11": {
+        "name": "Alarm",
+        "t": 4654.838588700004
+      },
+      "12": {
+        "name": "Door",
+        "t": 4659.788607399998
+      },
+      "13": {
+        "name": "Door",
+        "t": 4670.587843900008
+      },
+      "14": {
+        "name": "Alarm",
+        "t": 4693.8687358000025
+      },
+      "15": {
+        "name": "Door",
+        "t": 4696.668942000004
+      },
+      "16": {
+        "name": "Door",
+        "t": 4709.769426500003
+      },
+      "17": {
+        "name": "Alarm",
+        "t": 4732.8354509000055
+      },
+      "18": {
+        "name": "Door",
+        "t": 4735.967220000006
+      },
+      "19": {
+        "name": "Door",
+        "t": 4746.867267000009
+      },
+      "20": {
+        "name": "Alarm",
+        "t": 4771.899590000001
+      },
+      "21": {
+        "name": "Door",
+        "t": 4775.281722
+      },
+      "22": {
+        "name": "Door",
+        "t": 4786.132600800003
+      },
+      "23": {
+        "name": "Alarm",
+        "t": 4810.831040100005
+      },
+      "24": {
+        "name": "Door",
+        "t": 4815.7486546
+      },
+      "25": {
+        "name": "Door",
+        "t": 4826.947343599997
+      },
+      "26": {
+        "name": "Alarm",
+        "t": 4849.862589600001
+      },
+      "27": {
+        "name": "Door",
+        "t": 4853.279288999998
+      },
+      "28": {
+        "name": "Door",
+        "t": 4864.196740700005
+      },
+      "29": {
+        "name": "Win",
+        "t": 4871.930065000008
+      },
+      "30": {
+        "name": "BunkerHum",
+        "t": 4874.212222500006
+      },
+      "31": {
+        "name": "Alarm",
+        "t": 4900.243745400003
+      },
+      "32": {
+        "name": "Lose",
+        "t": 4913.2781388
+      }
+    }
+  },
+  "networkRestored": {
+    "InboundNetworkJitterMs": 0,
+    "OutboundNetworkJitterMs": 0,
+    "InboundNetworkMinDelayMs": 0,
+    "OutboundNetworkLossPercent": 0,
+    "InboundNetworkLossPercent": 0,
+    "OutboundNetworkMinDelayMs": 0
+  },
+  "output": "ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type"
+}
