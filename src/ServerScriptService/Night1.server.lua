@@ -59,6 +59,14 @@ sound("Alarm", "9118805558", 0.24)
 sound("Win", "9113867249", 0.35)
 sound("Lose", "9113085764", 0.35)
 local cueGenerations = {}
+local function stopAudio()
+    for _, cue in audio:GetChildren() do
+        if cue:IsA("Sound") then
+            cueGenerations[cue.Name] = (cueGenerations[cue.Name] or 0) + 1
+            cue:Stop()
+        end
+    end
+end
 local function playCue(name, duration)
     local cue = audio:FindFirstChild(name)
     cueGenerations[name] = (cueGenerations[name] or 0) + 1
@@ -247,7 +255,7 @@ local function startNight(player)
     enemyTimer = 0
     nextEnemyStep = sampleEnemyStep()
     light.Enabled = true
-    ambience:Stop()
+    stopAudio()
     ambience:Play()
     positionEnemy()
     if player.Character then seatInOffice(player, player.Character) end
@@ -258,7 +266,7 @@ local function finishNight(result, reason)
     status.Value = result
     cameraIndex.Value = 0
     message.Value = reason
-    ambience:Stop()
+    stopAudio()
     playCue(result == "WIN" and "Win" or "Lose", 2)
 end
 

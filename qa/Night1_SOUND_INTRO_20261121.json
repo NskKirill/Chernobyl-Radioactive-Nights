@@ -1,0 +1,2394 @@
+{
+  "date": "2026-11-21",
+  "baseCommit": "d62384daac458ee145671f1a08f1eeacdd209de7",
+  "build": "Night1_SOUND_INTRO_20261121.rbxl",
+  "buildPath": "C:\\Users\\admin\\Downloads\\ChernobylRadioactiveNights_Night1\\outputs\\night1_sound_intro_qa_20261121\\Night1_SOUND_INTRO_20261121.rbxl",
+  "sha256": "BCCBC391697CBE019066132E15DD42561C768DF085A10F95C914D4EF77C59512",
+  "sourcesMatch": true,
+  "method": "Normal mouse and keyboard controls in Studio. Wrong-door toggles reproduce cue overlap; full natural six-minute camera/door run verifies WIN. Diagnostic scripts only observe state, UI, sound playback and signal. No administrative assignment of progress, energy, enemy position or result.",
+  "baseline": {
+    "build": "Night1_TENSION_20261121.rbxl",
+    "readyUI": {
+      "1": {
+        "path": "Players.papa_pukpuk.PlayerGui.CRN_Night1_HUD.SecurityMonitor.TextLabel",
+        "text": "CHERNOBYL / NIGHT 1"
+      },
+      "2": {
+        "path": "Players.papa_pukpuk.PlayerGui.CRN_Night1_HUD.SecurityMonitor.TextLabel",
+        "text": "00:00  •  Энергия: 100%"
+      },
+      "3": {
+        "path": "Players.papa_pukpuk.PlayerGui.CRN_Night1_HUD.SecurityMonitor.TextLabel",
+        "text": "КАМЕРЫ ОТКЛЮЧЕНЫ — проверь коридоры"
+      },
+      "4": {
+        "path": "Players.papa_pukpuk.PlayerGui.CRN_Night1_HUD.SecurityMonitor.TextLabel",
+        "text": "Нажми «Начать ночь». Продержись до 06:00."
+      },
+      "5": {
+        "path": "Players.papa_pukpuk.PlayerGui.CRN_Night1_HUD.Controls.LeftDoor",
+        "text": "ЛЕВАЯ: ОТКРЫТА"
+      },
+      "6": {
+        "path": "Players.papa_pukpuk.PlayerGui.CRN_Night1_HUD.Controls.RightDoor",
+        "text": "ПРАВАЯ: ОТКРЫТА"
+      },
+      "7": {
+        "path": "Players.papa_pukpuk.PlayerGui.CRN_Night1_HUD.Controls.StartNight",
+        "text": "НАЧАТЬ НОЧЬ"
+      },
+      "8": {
+        "path": "Players.papa_pukpuk.PlayerGui.CRN_Night1_HUD.Controls.Camera1",
+        "text": "Камера 1 / Л"
+      },
+      "9": {
+        "path": "Players.papa_pukpuk.PlayerGui.CRN_Night1_HUD.Controls.Camera2",
+        "text": "Камера 2 / П"
+      },
+      "10": {
+        "path": "Players.papa_pukpuk.PlayerGui.CRN_Night1_HUD.Controls.Camera3",
+        "text": "Камера 3 / Офис"
+      },
+      "11": {
+        "path": "Players.papa_pukpuk.PlayerGui.CRN_Night1_HUD.Controls.CloseCamera",
+        "text": "Закрыть камеры"
+      }
+    },
+    "inset": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bottomInset\":\"0, 0\",\"topInset\":\"0, 58\",\"viewport\":\"1071.19995, 587.200012\",\"panelTop\":-43.31999969482422,\"ignore\":true}"
+        }
+      ],
+      "isError": false
+    },
+    "atLose": {
+      "status": "LOSE",
+      "audio": {
+        "Win": {
+          "position": 0,
+          "playing": false
+        },
+        "Alarm": {
+          "position": 0,
+          "playing": false
+        },
+        "Lose": {
+          "position": 0.277,
+          "playing": true
+        },
+        "BunkerHum": {
+          "position": 0,
+          "playing": false
+        },
+        "Door": {
+          "position": 0.512,
+          "playing": true
+        }
+      }
+    },
+    "quickRestart": {
+      "status": "RUNNING",
+      "audio": {
+        "Win": {
+          "position": 0,
+          "playing": false
+        },
+        "Alarm": {
+          "position": 0,
+          "playing": false
+        },
+        "Lose": {
+          "position": 0.725,
+          "playing": true
+        },
+        "BunkerHum": {
+          "position": 0.238,
+          "playing": true
+        },
+        "Door": {
+          "position": 0.96,
+          "playing": true
+        }
+      }
+    },
+    "soundTrace": {
+      "plays": {
+        "1": {
+          "time": 2576.627045000001,
+          "name": "BunkerHum"
+        },
+        "2": {
+          "time": 2604.8251677999942,
+          "name": "Alarm"
+        },
+        "3": {
+          "time": 2605.8084956999955,
+          "name": "Door"
+        },
+        "4": {
+          "time": 2606.2754190999985,
+          "name": "Door"
+        },
+        "5": {
+          "time": 2606.7422619999998,
+          "name": "Door"
+        },
+        "6": {
+          "time": 2607.209413699995,
+          "name": "Door"
+        },
+        "7": {
+          "time": 2607.6748353000003,
+          "name": "Door"
+        },
+        "8": {
+          "time": 2608.1424568999937,
+          "name": "Door"
+        },
+        "9": {
+          "time": 2608.607559600001,
+          "name": "Door"
+        },
+        "10": {
+          "time": 2609.0757465999923,
+          "name": "Door"
+        },
+        "11": {
+          "time": 2609.5418087,
+          "name": "Door"
+        },
+        "12": {
+          "time": 2609.942416399994,
+          "name": "Door"
+        },
+        "13": {
+          "time": 2610.408937299988,
+          "name": "Door"
+        },
+        "14": {
+          "time": 2610.808774399993,
+          "name": "Door"
+        },
+        "15": {
+          "time": 2611.2593602999987,
+          "name": "Door"
+        },
+        "16": {
+          "time": 2611.7414112999977,
+          "name": "Door"
+        },
+        "17": {
+          "time": 2612.20811349999,
+          "name": "Door"
+        },
+        "18": {
+          "time": 2612.6744548999995,
+          "name": "Door"
+        },
+        "19": {
+          "time": 2613.140688300002,
+          "name": "Door"
+        },
+        "20": {
+          "time": 2613.6075641999923,
+          "name": "Door"
+        },
+        "21": {
+          "time": 2614.007286299995,
+          "name": "Door"
+        },
+        "22": {
+          "time": 2614.4746952999994,
+          "name": "Door"
+        },
+        "23": {
+          "time": 2614.873926299988,
+          "name": "Door"
+        },
+        "24": {
+          "time": 2615.3409934999945,
+          "name": "Door"
+        },
+        "25": {
+          "time": 2615.8092395999993,
+          "name": "Door"
+        },
+        "26": {
+          "time": 2616.2081828999944,
+          "name": "Door"
+        },
+        "27": {
+          "time": 2616.6739993999945,
+          "name": "Door"
+        },
+        "28": {
+          "time": 2617.1414670999948,
+          "name": "Door"
+        },
+        "29": {
+          "time": 2617.359315599999,
+          "name": "Lose"
+        },
+        "30": {
+          "time": 2617.809802799995,
+          "name": "BunkerHum"
+        }
+      },
+      "levels": {
+        "Win": {
+          "loaded": true,
+          "length": 0.4845625,
+          "peak": 0,
+          "maxPosition": 0
+        },
+        "Alarm": {
+          "loaded": true,
+          "length": 6.9013333333333335,
+          "peak": 89.30779993534088,
+          "maxPosition": 1.579
+        },
+        "Lose": {
+          "loaded": true,
+          "length": 1.0425208333333333,
+          "peak": 126.81637704372406,
+          "maxPosition": 0.811
+        },
+        "BunkerHum": {
+          "loaded": true,
+          "length": 56.010104166666665,
+          "peak": 52.32007056474686,
+          "maxPosition": 40.683
+        },
+        "Door": {
+          "loaded": true,
+          "length": 1.3954166666666667,
+          "peak": 184.22284722328186,
+          "maxPosition": 1.045
+        }
+      },
+      "states": {
+        "1": {
+          "status": "RUNNING",
+          "time": 2576.726761699989,
+          "playing": {
+            "Win": false,
+            "Alarm": false,
+            "Lose": false,
+            "BunkerHum": true,
+            "Door": false
+          }
+        },
+        "2": {
+          "status": "LOSE",
+          "time": 2617.4754262999923,
+          "playing": {
+            "Win": false,
+            "Alarm": false,
+            "Lose": true,
+            "BunkerHum": false,
+            "Door": true
+          }
+        },
+        "3": {
+          "status": "RUNNING",
+          "time": 2617.9257431000005,
+          "playing": {
+            "Win": false,
+            "Alarm": false,
+            "Lose": true,
+            "BunkerHum": true,
+            "Door": true
+          }
+        }
+      }
+    }
+  },
+  "candidate": {
+    "readyLayout": {
+      "panelsOverlap": false,
+      "labels": {
+        "1": {
+          "y": 22.230010986328125,
+          "h": 25,
+          "name": "Title",
+          "x": 44.135986328125,
+          "fits": true,
+          "w": 460,
+          "text": "CHERNOBYL / NIGHT 1"
+        },
+        "2": {
+          "y": 51.230010986328125,
+          "h": 23,
+          "name": "Clock",
+          "x": 44.135986328125,
+          "fits": true,
+          "w": 460,
+          "text": "00:00  •  Энергия: 100%"
+        },
+        "3": {
+          "y": 78.23001098632812,
+          "h": 22,
+          "name": "Threat",
+          "x": 44.135986328125,
+          "fits": true,
+          "w": 460,
+          "text": "ЦЕЛЬ: ДОЖИВИ ДО 06:00"
+        },
+        "4": {
+          "y": 102.23001098632812,
+          "h": 114,
+          "name": "Notice",
+          "x": 44.135986328125,
+          "fits": true,
+          "w": 456,
+          "text": "Ночь длится 6 минут.\nПосле шороха: 1 / 2 — найди сторону угрозы.\nQ / E — закрой нужную дверь; C — убери камеры.\nПосле удара открой дверь: энергия ограничена.\nN или кнопка ниже — начать."
+        },
+        "5": {
+          "y": 356.97003173828125,
+          "h": 46,
+          "name": "LeftDoor",
+          "x": 32.135986328125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "Q · ЛЕВАЯ\nОТКРЫТА"
+        },
+        "6": {
+          "y": 356.97003173828125,
+          "h": 46,
+          "name": "RightDoor",
+          "x": 189.57598876953125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "E · ПРАВАЯ\nОТКРЫТА"
+        },
+        "7": {
+          "y": 356.97003173828125,
+          "h": 46,
+          "name": "StartNight",
+          "x": 347.0159912109375,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "N · НАЧАТЬ\nНОЧЬ"
+        },
+        "8": {
+          "y": 407.97003173828125,
+          "h": 46,
+          "name": "Camera1",
+          "x": 32.135986328125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "1 · ЛЕВЫЙ\nКОРИДОР"
+        },
+        "9": {
+          "y": 407.97003173828125,
+          "h": 46,
+          "name": "Camera2",
+          "x": 189.57598876953125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "2 · ПРАВЫЙ\nКОРИДОР"
+        },
+        "10": {
+          "y": 407.97003173828125,
+          "h": 46,
+          "name": "Camera3",
+          "x": 347.0159912109375,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "3 · ОБЗОР\nОФИСА"
+        },
+        "11": {
+          "y": 458.97003173828125,
+          "h": 46,
+          "name": "CloseCamera",
+          "x": 32.135986328125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "C · УБРАТЬ\nКАМЕРЫ"
+        }
+      },
+      "status": "READY",
+      "topInset": "0, 58",
+      "panelHeight": 210,
+      "viewport": "1071.19995, 587.200012",
+      "controlsY": 356.97003173828125,
+      "ignoreInset": false,
+      "panelY": 13.230010986328125
+    },
+    "runningLayout": {
+      "panelsOverlap": false,
+      "labels": {
+        "1": {
+          "y": 22.230010986328125,
+          "h": 25,
+          "name": "Title",
+          "x": 44.135986328125,
+          "fits": true,
+          "w": 460,
+          "text": "CHERNOBYL / NIGHT 1"
+        },
+        "2": {
+          "y": 51.230010986328125,
+          "h": 23,
+          "name": "Clock",
+          "x": 44.135986328125,
+          "fits": true,
+          "w": 460,
+          "text": "00:00  •  Энергия: 99%"
+        },
+        "3": {
+          "y": 78.23001098632812,
+          "h": 22,
+          "name": "Threat",
+          "x": 44.135986328125,
+          "fits": true,
+          "w": 460,
+          "text": "1 / 2 — ПРОВЕРЬ КОРИДОРЫ"
+        },
+        "4": {
+          "y": 102.23001098632812,
+          "h": 49,
+          "name": "Notice",
+          "x": 44.135986328125,
+          "fits": true,
+          "w": 456,
+          "text": "00:00. Электричество ограничено. Следи за коридорами."
+        },
+        "5": {
+          "y": 356.97003173828125,
+          "h": 46,
+          "name": "LeftDoor",
+          "x": 32.135986328125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "Q · ЛЕВАЯ\nОТКРЫТА"
+        },
+        "6": {
+          "y": 356.97003173828125,
+          "h": 46,
+          "name": "RightDoor",
+          "x": 189.57598876953125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "E · ПРАВАЯ\nОТКРЫТА"
+        },
+        "7": {
+          "y": 356.97003173828125,
+          "h": 46,
+          "name": "StartNight",
+          "x": 347.0159912109375,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "ИДЁТ НОЧЬ"
+        },
+        "8": {
+          "y": 407.97003173828125,
+          "h": 46,
+          "name": "Camera1",
+          "x": 32.135986328125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "1 · ЛЕВЫЙ\nКОРИДОР"
+        },
+        "9": {
+          "y": 407.97003173828125,
+          "h": 46,
+          "name": "Camera2",
+          "x": 189.57598876953125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "2 · ПРАВЫЙ\nКОРИДОР"
+        },
+        "10": {
+          "y": 407.97003173828125,
+          "h": 46,
+          "name": "Camera3",
+          "x": 347.0159912109375,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "3 · ОБЗОР\nОФИСА"
+        },
+        "11": {
+          "y": 458.97003173828125,
+          "h": 46,
+          "name": "CloseCamera",
+          "x": 32.135986328125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "C · УБРАТЬ\nКАМЕРЫ"
+        }
+      },
+      "status": "RUNNING",
+      "topInset": "0, 58",
+      "panelHeight": 144,
+      "viewport": "1071.19995, 587.200012",
+      "controlsY": 356.97003173828125,
+      "ignoreInset": false,
+      "panelY": 13.230010986328125
+    },
+    "earlyCameraHints": [
+      {
+        "camera": 1,
+        "text": "КАМЕРА 1: цель не обнаружена",
+        "fits": true
+      },
+      {
+        "camera": 2,
+        "text": "ДВИЖЕНИЕ СПРАВА — ЖДИ ШОРОХА",
+        "fits": true
+      },
+      {
+        "camera": 3,
+        "text": "КАМЕРА 3: офис под наблюдением",
+        "fits": true
+      }
+    ],
+    "detectionHints": [
+      {
+        "camera": 2,
+        "text": "ОБНАРУЖЕН СПРАВА — ЗАКРОЙ E",
+        "fits": true
+      },
+      {
+        "camera": 2,
+        "text": "ОБНАРУЖЕН СПРАВА — ЗАКРОЙ E",
+        "fits": true
+      },
+      {
+        "camera": 1,
+        "text": "ОБНАРУЖЕН СЛЕВА — ЗАКРОЙ Q",
+        "fits": true
+      },
+      {
+        "camera": 1,
+        "text": "ОБНАРУЖЕН СЛЕВА — ЗАКРОЙ Q",
+        "fits": true
+      },
+      {
+        "camera": 2,
+        "text": "ОБНАРУЖЕН СПРАВА — ЗАКРОЙ E",
+        "fits": true
+      },
+      {
+        "camera": 1,
+        "text": "ОБНАРУЖЕН СЛЕВА — ЗАКРОЙ Q",
+        "fits": true
+      },
+      {
+        "camera": 2,
+        "text": "ОБНАРУЖЕН СПРАВА — ЗАКРОЙ E",
+        "fits": true
+      },
+      {
+        "camera": 2,
+        "text": "ОБНАРУЖЕН СПРАВА — ЗАКРОЙ E",
+        "fits": true
+      },
+      {
+        "camera": 1,
+        "text": "ОБНАРУЖЕН СЛЕВА — ЗАКРОЙ Q",
+        "fits": true
+      },
+      {
+        "camera": 1,
+        "text": "ОБНАРУЖЕН СЛЕВА — ЗАКРОЙ Q",
+        "fits": true
+      }
+    ],
+    "atLose": {
+      "status": "LOSE",
+      "audio": {
+        "Lose": {
+          "position": 0.555,
+          "playing": true
+        },
+        "Alarm": {
+          "position": 0,
+          "playing": false
+        },
+        "Win": {
+          "position": 0,
+          "playing": false
+        },
+        "BunkerHum": {
+          "position": 0,
+          "playing": false
+        },
+        "Door": {
+          "position": 0,
+          "playing": false
+        }
+      }
+    },
+    "quickLoseRestart": {
+      "status": "RUNNING",
+      "audio": {
+        "Lose": {
+          "position": 0,
+          "playing": false
+        },
+        "Alarm": {
+          "position": 0,
+          "playing": false
+        },
+        "Win": {
+          "position": 0,
+          "playing": false
+        },
+        "BunkerHum": {
+          "position": 0.218,
+          "playing": true
+        },
+        "Door": {
+          "position": 0,
+          "playing": false
+        }
+      }
+    },
+    "loseSoundTrace": {
+      "plays": {
+        "1": {
+          "time": 246.8729003000044,
+          "name": "BunkerHum"
+        },
+        "2": {
+          "time": 272.2386269999988,
+          "name": "Alarm"
+        },
+        "3": {
+          "time": 273.7366301000002,
+          "name": "Door"
+        },
+        "4": {
+          "time": 274.21997390000615,
+          "name": "Door"
+        },
+        "5": {
+          "time": 274.68784860000596,
+          "name": "Door"
+        },
+        "6": {
+          "time": 275.1373747000034,
+          "name": "Door"
+        },
+        "7": {
+          "time": 275.6215690000099,
+          "name": "Door"
+        },
+        "8": {
+          "time": 276.08793230001174,
+          "name": "Door"
+        },
+        "9": {
+          "time": 276.5538094000076,
+          "name": "Door"
+        },
+        "10": {
+          "time": 277.0202125000069,
+          "name": "Door"
+        },
+        "11": {
+          "time": 277.4546132000105,
+          "name": "Door"
+        },
+        "12": {
+          "time": 277.9541726000025,
+          "name": "Door"
+        },
+        "13": {
+          "time": 278.4202183000016,
+          "name": "Door"
+        },
+        "14": {
+          "time": 278.8872972000099,
+          "name": "Door"
+        },
+        "15": {
+          "time": 279.35299759999907,
+          "name": "Door"
+        },
+        "16": {
+          "time": 279.80337110000255,
+          "name": "Door"
+        },
+        "17": {
+          "time": 280.28693139999814,
+          "name": "Door"
+        },
+        "18": {
+          "time": 280.7539642000047,
+          "name": "Door"
+        },
+        "19": {
+          "time": 281.21996390000277,
+          "name": "Door"
+        },
+        "20": {
+          "time": 281.68684629999916,
+          "name": "Door"
+        },
+        "21": {
+          "time": 282.1540068000031,
+          "name": "Door"
+        },
+        "22": {
+          "time": 282.62035990000004,
+          "name": "Door"
+        },
+        "23": {
+          "time": 283.06998430000385,
+          "name": "Door"
+        },
+        "24": {
+          "time": 283.53718490000756,
+          "name": "Door"
+        },
+        "25": {
+          "time": 284.0032874000026,
+          "name": "Door"
+        },
+        "26": {
+          "time": 284.4539833000017,
+          "name": "Door"
+        },
+        "27": {
+          "time": 284.92023470001004,
+          "name": "Door"
+        },
+        "28": {
+          "time": 285.4033962000103,
+          "name": "Door"
+        },
+        "29": {
+          "time": 285.8534711000102,
+          "name": "Door"
+        },
+        "30": {
+          "time": 286.31957310000143,
+          "name": "Door"
+        },
+        "31": {
+          "time": 286.8029133000091,
+          "name": "Door"
+        },
+        "32": {
+          "time": 287.25449070001196,
+          "name": "Door"
+        },
+        "33": {
+          "time": 287.7199086000037,
+          "name": "Door"
+        },
+        "34": {
+          "time": 287.77125190000515,
+          "name": "Lose"
+        },
+        "35": {
+          "time": 288.48627110000234,
+          "name": "Door"
+        },
+        "36": {
+          "time": 288.48649550000846,
+          "name": "BunkerHum"
+        }
+      },
+      "levels": {
+        "Lose": {
+          "loaded": true,
+          "length": 1.0425208333333333,
+          "peak": 127.59478390216827,
+          "maxPosition": 0.96
+        },
+        "Alarm": {
+          "loaded": true,
+          "length": 6.9013333333333335,
+          "peak": 89.30779993534088,
+          "maxPosition": 1.557
+        },
+        "Win": {
+          "loaded": true,
+          "length": 0.4845625,
+          "peak": 0,
+          "maxPosition": 0
+        },
+        "BunkerHum": {
+          "loaded": true,
+          "length": 56.010104166666665,
+          "peak": 62.660444527864456,
+          "maxPosition": 43.861
+        },
+        "Door": {
+          "loaded": true,
+          "length": 1.3954166666666667,
+          "peak": 184.22284722328186,
+          "maxPosition": 0.469
+        }
+      },
+      "states": {
+        "1": {
+          "status": "RUNNING",
+          "time": 246.98884610000823,
+          "playing": {
+            "Lose": false,
+            "Alarm": false,
+            "Win": false,
+            "BunkerHum": true,
+            "Door": false
+          }
+        },
+        "2": {
+          "status": "LOSE",
+          "time": 287.871086500003,
+          "playing": {
+            "Lose": true,
+            "Alarm": false,
+            "Win": false,
+            "BunkerHum": false,
+            "Door": false
+          }
+        },
+        "3": {
+          "status": "RUNNING",
+          "time": 288.58696680000867,
+          "playing": {
+            "Lose": false,
+            "Alarm": false,
+            "Win": false,
+            "BunkerHum": true,
+            "Door": false
+          }
+        }
+      }
+    },
+    "summary": {
+      "seconds": 360.13555639999686,
+      "deflections": 9,
+      "lastWarningBeforeWinSeconds": 2.0995529999927385,
+      "result": {
+        "message": "06:00. Рассвет! Ты пережил первую ночь.",
+        "camera": 0,
+        "hour": 6,
+        "status": "WIN",
+        "right": false,
+        "energy": 40.28882965199456,
+        "left": true
+      },
+      "audioLevelsAcrossCandidateSessions": {
+        "Win": {
+          "loaded": true,
+          "length": 0.4845625,
+          "peak": 122.89850413799286,
+          "maxPosition": 0.384
+        },
+        "Alarm": {
+          "loaded": true,
+          "length": 6.9013333333333335,
+          "peak": 89.30779993534088,
+          "maxPosition": 1.6
+        },
+        "Lose": {
+          "loaded": true,
+          "length": 1.0425208333333333,
+          "peak": 127.59478390216827,
+          "maxPosition": 0.96
+        },
+        "BunkerHum": {
+          "loaded": true,
+          "length": 56.010104166666665,
+          "peak": 62.660444527864456,
+          "maxPosition": 56.002
+        },
+        "Door": {
+          "loaded": true,
+          "length": 1.3954166666666667,
+          "peak": 184.22284722328186,
+          "maxPosition": 1.395
+        }
+      }
+    },
+    "mouseStart": {
+      "message": "00:00. Электричество ограничено. Следи за коридорами.",
+      "camera": 0,
+      "hour": 0,
+      "status": "RUNNING",
+      "right": false,
+      "energy": 99.99995867649966,
+      "left": false
+    },
+    "winRestart": {
+      "CameraPosition": "0, 6, 6",
+      "EnemySide": "LEFT",
+      "CameraIndex": 0,
+      "Hour": 0,
+      "Message": "00:00. Электричество ограничено. Следи за коридорами.",
+      "CameraType": "Scriptable",
+      "RightDoorClosed": false,
+      "Status": "RUNNING",
+      "LeftDoorClosed": false,
+      "EnemyStage": 0,
+      "Energy": 99.99779817249997
+    },
+    "afterWinAudio": {
+      "Win": false,
+      "Alarm": false,
+      "Lose": false,
+      "BunkerHum": true,
+      "Door": false
+    },
+    "clientSound": {
+      "plays": {
+        "1": {
+          "time": 434.11584880000737,
+          "name": "BunkerHum"
+        },
+        "2": {
+          "time": 463.2315573000087,
+          "name": "Alarm"
+        },
+        "3": {
+          "time": 464.58002240001224,
+          "name": "Door"
+        },
+        "4": {
+          "time": 477.37925969999924,
+          "name": "Door"
+        },
+        "5": {
+          "time": 503.8953746000043,
+          "name": "Alarm"
+        },
+        "6": {
+          "time": 504.9781304000062,
+          "name": "Door"
+        },
+        "7": {
+          "time": 516.5782298999984,
+          "name": "Door"
+        },
+        "8": {
+          "time": 539.7777710000082,
+          "name": "Alarm"
+        },
+        "9": {
+          "time": 540.42725600001,
+          "name": "Door"
+        },
+        "10": {
+          "time": 555.3767363000079,
+          "name": "Door"
+        },
+        "11": {
+          "time": 580.5084701000014,
+          "name": "Alarm"
+        },
+        "12": {
+          "time": 581.1747019000031,
+          "name": "Door"
+        },
+        "13": {
+          "time": 591.5750795000058,
+          "name": "Door"
+        },
+        "14": {
+          "time": 618.9905683000106,
+          "name": "Alarm"
+        },
+        "15": {
+          "time": 620.0407148000086,
+          "name": "Door"
+        },
+        "16": {
+          "time": 630.7733588999981,
+          "name": "Door"
+        },
+        "17": {
+          "time": 655.521899600004,
+          "name": "Alarm"
+        },
+        "18": {
+          "time": 656.2059735000075,
+          "name": "Door"
+        },
+        "19": {
+          "time": 669.5383444000036,
+          "name": "Door"
+        },
+        "20": {
+          "time": 690.3371594000055,
+          "name": "Alarm"
+        },
+        "21": {
+          "time": 691.3869768000004,
+          "name": "Door"
+        },
+        "22": {
+          "time": 701.2043235000019,
+          "name": "Door"
+        },
+        "23": {
+          "time": 725.4039830000111,
+          "name": "Alarm"
+        },
+        "24": {
+          "time": 726.5363861000078,
+          "name": "Door"
+        },
+        "25": {
+          "time": 738.936348400006,
+          "name": "Door"
+        },
+        "26": {
+          "time": 763.1019557000109,
+          "name": "Alarm"
+        },
+        "27": {
+          "time": 763.8014040999988,
+          "name": "Door"
+        },
+        "28": {
+          "time": 773.2009620000026,
+          "name": "Door"
+        },
+        "29": {
+          "time": 792.1498665000108,
+          "name": "Alarm"
+        },
+        "30": {
+          "time": 792.8664376000088,
+          "name": "Door"
+        },
+        "31": {
+          "time": 794.2499692999991,
+          "name": "Win"
+        }
+      },
+      "levels": {
+        "Win": {
+          "loaded": true,
+          "length": 0.4845625,
+          "peak": 122.89850413799286,
+          "maxPosition": 0.384
+        },
+        "Alarm": {
+          "loaded": true,
+          "length": 6.9013333333333335,
+          "peak": 89.30779993534088,
+          "maxPosition": 1.6
+        },
+        "Lose": {
+          "loaded": true,
+          "length": 1.0425208333333333,
+          "peak": 0,
+          "maxPosition": 0
+        },
+        "BunkerHum": {
+          "loaded": true,
+          "length": 56.010104166666665,
+          "peak": 61.321670189499855,
+          "maxPosition": 56.002
+        },
+        "Door": {
+          "loaded": true,
+          "length": 1.3954166666666667,
+          "peak": 184.22284722328186,
+          "maxPosition": 1.395
+        }
+      },
+      "states": {
+        "1": {
+          "status": "RUNNING",
+          "time": 434.23188800000935,
+          "playing": {
+            "Win": false,
+            "Alarm": false,
+            "Lose": false,
+            "BunkerHum": true,
+            "Door": false
+          }
+        },
+        "2": {
+          "status": "WIN",
+          "time": 794.3511631000001,
+          "playing": {
+            "Win": true,
+            "Alarm": false,
+            "Lose": false,
+            "BunkerHum": false,
+            "Door": false
+          }
+        }
+      }
+    },
+    "serverSound": {
+      "plays": {
+        "1": {
+          "time": 434.08119960001204,
+          "name": "BunkerHum"
+        },
+        "2": {
+          "time": 463.19698620001145,
+          "name": "Alarm"
+        },
+        "3": {
+          "time": 464.54663620000065,
+          "name": "Door"
+        },
+        "4": {
+          "time": 477.3466436000017,
+          "name": "Door"
+        },
+        "5": {
+          "time": 503.86287399999856,
+          "name": "Alarm"
+        },
+        "6": {
+          "time": 504.94526069999847,
+          "name": "Door"
+        },
+        "7": {
+          "time": 516.5446494000062,
+          "name": "Door"
+        },
+        "8": {
+          "time": 539.7436770000058,
+          "name": "Alarm"
+        },
+        "9": {
+          "time": 540.4102180000045,
+          "name": "Door"
+        },
+        "10": {
+          "time": 555.3427207000059,
+          "name": "Door"
+        },
+        "11": {
+          "time": 580.4746163000091,
+          "name": "Alarm"
+        },
+        "12": {
+          "time": 581.1420281000028,
+          "name": "Door"
+        },
+        "13": {
+          "time": 591.5413411000045,
+          "name": "Door"
+        },
+        "14": {
+          "time": 618.9573788999987,
+          "name": "Alarm"
+        },
+        "15": {
+          "time": 620.0077172000019,
+          "name": "Door"
+        },
+        "16": {
+          "time": 630.7399561000057,
+          "name": "Door"
+        },
+        "17": {
+          "time": 655.4894133000053,
+          "name": "Alarm"
+        },
+        "18": {
+          "time": 656.1724112000084,
+          "name": "Door"
+        },
+        "19": {
+          "time": 669.5048091000062,
+          "name": "Door"
+        },
+        "20": {
+          "time": 690.3044110000046,
+          "name": "Alarm"
+        },
+        "21": {
+          "time": 691.3708020000049,
+          "name": "Door"
+        },
+        "22": {
+          "time": 701.1695631000039,
+          "name": "Door"
+        },
+        "23": {
+          "time": 725.3708403000055,
+          "name": "Alarm"
+        },
+        "24": {
+          "time": 726.5032944000122,
+          "name": "Door"
+        },
+        "25": {
+          "time": 738.9015467999998,
+          "name": "Door"
+        },
+        "26": {
+          "time": 763.0686408000038,
+          "name": "Alarm"
+        },
+        "27": {
+          "time": 763.7679938000074,
+          "name": "Door"
+        },
+        "28": {
+          "time": 773.167549500009,
+          "name": "Door"
+        },
+        "29": {
+          "time": 792.1171184000123,
+          "name": "Alarm"
+        },
+        "30": {
+          "time": 792.8342611000116,
+          "name": "Door"
+        },
+        "31": {
+          "time": 794.216719700009,
+          "name": "Win"
+        }
+      },
+      "levels": {
+        "Lose": {
+          "loaded": true,
+          "length": 1.0425208333333333,
+          "peak": 0,
+          "maxPosition": 0
+        },
+        "Alarm": {
+          "loaded": true,
+          "length": 6.9013333333333335,
+          "peak": 0,
+          "maxPosition": 1.6012581439971427
+        },
+        "Win": {
+          "loaded": true,
+          "length": 0.4845625,
+          "peak": 0,
+          "maxPosition": 0.46762051899725066
+        },
+        "BunkerHum": {
+          "loaded": true,
+          "length": 56.010104166666665,
+          "peak": 0,
+          "maxPosition": 56.0012420239384
+        },
+        "Door": {
+          "loaded": true,
+          "length": 1.3954166666666667,
+          "peak": 0,
+          "maxPosition": 1.3853398250154214
+        }
+      },
+      "states": {
+        "1": {
+          "status": "RUNNING",
+          "time": 434.1820817000116,
+          "playing": {
+            "Lose": false,
+            "Alarm": false,
+            "Win": false,
+            "BunkerHum": true,
+            "Door": false
+          }
+        },
+        "2": {
+          "status": "WIN",
+          "time": 794.317096800005,
+          "playing": {
+            "Lose": false,
+            "Alarm": false,
+            "Win": true,
+            "BunkerHum": false,
+            "Door": false
+          }
+        }
+      }
+    },
+    "clientStatesAfterWinRestart": {
+      "1": {
+        "status": "RUNNING",
+        "time": 434.23188800000935,
+        "playing": {
+          "Win": false,
+          "Alarm": false,
+          "Lose": false,
+          "BunkerHum": true,
+          "Door": false
+        }
+      },
+      "2": {
+        "status": "WIN",
+        "time": 794.3511631000001,
+        "playing": {
+          "Win": true,
+          "Alarm": false,
+          "Lose": false,
+          "BunkerHum": false,
+          "Door": false
+        }
+      },
+      "3": {
+        "status": "RUNNING",
+        "time": 795.1835519000015,
+        "playing": {
+          "Win": false,
+          "Alarm": false,
+          "Lose": false,
+          "BunkerHum": true,
+          "Door": false
+        }
+      },
+      "4": {
+        "status": "LOSE",
+        "time": 838.5320124999998,
+        "playing": {
+          "Win": false,
+          "Alarm": false,
+          "Lose": true,
+          "BunkerHum": false,
+          "Door": false
+        }
+      }
+    },
+    "gameTrace": {
+      "steps": {
+        "1": {
+          "time": 448.39722930001153,
+          "stage": 1,
+          "hour": 0
+        },
+        "2": {
+          "time": 463.1968659999984,
+          "stage": 2,
+          "hour": 0
+        },
+        "3": {
+          "time": 477.01515220000874,
+          "stage": 3,
+          "hour": 0
+        },
+        "4": {
+          "time": 477.0152659000014,
+          "stage": 0,
+          "hour": 0
+        },
+        "5": {
+          "time": 491.6963870000036,
+          "stage": 1,
+          "hour": 0
+        },
+        "6": {
+          "time": 503.8627831000049,
+          "stage": 2,
+          "hour": 1
+        },
+        "7": {
+          "time": 516.2282894000091,
+          "stage": 3,
+          "hour": 1
+        },
+        "8": {
+          "time": 516.2283804000035,
+          "stage": 0,
+          "hour": 1
+        },
+        "9": {
+          "time": 528.0110219000053,
+          "stage": 1,
+          "hour": 1
+        },
+        "10": {
+          "time": 539.7435870000045,
+          "stage": 2,
+          "hour": 1
+        },
+        "11": {
+          "time": 555.0590073000058,
+          "stage": 3,
+          "hour": 2
+        },
+        "12": {
+          "time": 555.0591089000081,
+          "stage": 0,
+          "hour": 2
+        },
+        "13": {
+          "time": 568.7427921000053,
+          "stage": 1,
+          "hour": 2
+        },
+        "14": {
+          "time": 580.4745140000014,
+          "stage": 2,
+          "hour": 2
+        },
+        "15": {
+          "time": 591.2415189000021,
+          "stage": 3,
+          "hour": 2
+        },
+        "16": {
+          "time": 591.241640799999,
+          "stage": 0,
+          "hour": 2
+        },
+        "17": {
+          "time": 605.3073751000047,
+          "stage": 1,
+          "hour": 2
+        },
+        "18": {
+          "time": 618.9572836000007,
+          "stage": 2,
+          "hour": 3
+        },
+        "19": {
+          "time": 630.4562326000014,
+          "stage": 3,
+          "hour": 3
+        },
+        "20": {
+          "time": 630.4563985999994,
+          "stage": 0,
+          "hour": 3
+        },
+        "21": {
+          "time": 641.8562443000119,
+          "stage": 1,
+          "hour": 3
+        },
+        "22": {
+          "time": 655.4893085000076,
+          "stage": 2,
+          "hour": 3
+        },
+        "23": {
+          "time": 669.1557061000058,
+          "stage": 3,
+          "hour": 3
+        },
+        "24": {
+          "time": 669.1557881000044,
+          "stage": 0,
+          "hour": 3
+        },
+        "25": {
+          "time": 680.7047059000033,
+          "stage": 1,
+          "hour": 4
+        },
+        "26": {
+          "time": 690.3043405000062,
+          "stage": 2,
+          "hour": 4
+        },
+        "27": {
+          "time": 700.8371538000065,
+          "stage": 3,
+          "hour": 4
+        },
+        "28": {
+          "time": 700.8372119999985,
+          "stage": 0,
+          "hour": 4
+        },
+        "29": {
+          "time": 713.4525224000099,
+          "stage": 1,
+          "hour": 4
+        },
+        "30": {
+          "time": 725.3707294000051,
+          "stage": 2,
+          "hour": 4
+        },
+        "31": {
+          "time": 738.5692984000052,
+          "stage": 3,
+          "hour": 5
+        },
+        "32": {
+          "time": 738.5693883000058,
+          "stage": 0,
+          "hour": 5
+        },
+        "33": {
+          "time": 750.3365124999982,
+          "stage": 1,
+          "hour": 5
+        },
+        "34": {
+          "time": 763.0685799000057,
+          "stage": 2,
+          "hour": 5
+        },
+        "35": {
+          "time": 772.8671808000072,
+          "stage": 3,
+          "hour": 5
+        },
+        "36": {
+          "time": 772.867298600002,
+          "stage": 0,
+          "hour": 5
+        },
+        "37": {
+          "time": 783.2014200999984,
+          "stage": 1,
+          "hour": 5
+        },
+        "38": {
+          "time": 792.1170195000013,
+          "stage": 2,
+          "hour": 5
+        }
+      },
+      "cameraOpens": 18,
+      "doors": {
+        "1": {
+          "closed": true,
+          "stage": 2,
+          "time": 464.54642779999995,
+          "door": "RightDoorClosed"
+        },
+        "2": {
+          "closed": false,
+          "stage": 0,
+          "time": 477.3465109000099,
+          "door": "RightDoorClosed"
+        },
+        "3": {
+          "closed": true,
+          "stage": 2,
+          "time": 504.9451647000096,
+          "door": "RightDoorClosed"
+        },
+        "4": {
+          "closed": false,
+          "stage": 0,
+          "time": 516.544556000008,
+          "door": "RightDoorClosed"
+        },
+        "5": {
+          "closed": true,
+          "stage": 2,
+          "time": 540.4101179999998,
+          "door": "LeftDoorClosed"
+        },
+        "6": {
+          "closed": false,
+          "stage": 0,
+          "time": 555.3426163000113,
+          "door": "LeftDoorClosed"
+        },
+        "7": {
+          "closed": true,
+          "stage": 2,
+          "time": 581.1419372000091,
+          "door": "LeftDoorClosed"
+        },
+        "8": {
+          "closed": false,
+          "stage": 0,
+          "time": 591.5412527000008,
+          "door": "LeftDoorClosed"
+        },
+        "9": {
+          "closed": true,
+          "stage": 2,
+          "time": 620.007640900003,
+          "door": "RightDoorClosed"
+        },
+        "10": {
+          "closed": false,
+          "stage": 0,
+          "time": 630.7397804000066,
+          "door": "RightDoorClosed"
+        },
+        "11": {
+          "closed": true,
+          "stage": 2,
+          "time": 656.1723125999997,
+          "door": "LeftDoorClosed"
+        },
+        "12": {
+          "closed": false,
+          "stage": 0,
+          "time": 669.5047324000043,
+          "door": "LeftDoorClosed"
+        },
+        "13": {
+          "closed": true,
+          "stage": 2,
+          "time": 691.3706961999997,
+          "door": "RightDoorClosed"
+        },
+        "14": {
+          "closed": false,
+          "stage": 0,
+          "time": 701.1694698000065,
+          "door": "RightDoorClosed"
+        },
+        "15": {
+          "closed": true,
+          "stage": 2,
+          "time": 726.5031271000043,
+          "door": "RightDoorClosed"
+        },
+        "16": {
+          "closed": false,
+          "stage": 0,
+          "time": 738.9014712000062,
+          "door": "RightDoorClosed"
+        },
+        "17": {
+          "closed": true,
+          "stage": 2,
+          "time": 763.7678888000082,
+          "door": "LeftDoorClosed"
+        },
+        "18": {
+          "closed": false,
+          "stage": 0,
+          "time": 773.1674282000022,
+          "door": "LeftDoorClosed"
+        },
+        "19": {
+          "closed": true,
+          "stage": 2,
+          "time": 792.834162900006,
+          "door": "LeftDoorClosed"
+        }
+      },
+      "events": {
+        "1": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 0,
+          "message": "Нажми «Начать ночь». Продержись до 06:00.",
+          "camera": 0,
+          "time": 372.0355705000111,
+          "status": "READY",
+          "left": false,
+          "stage": 0,
+          "energy": 100
+        },
+        "2": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 0,
+          "message": "00:00. Электричество ограничено. Следи за коридорами.",
+          "camera": 0,
+          "time": 434.08108420000644,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 0,
+          "energy": 100
+        },
+        "3": {
+          "side": "RIGHT",
+          "right": false,
+          "hour": 0,
+          "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+          "camera": 0,
+          "time": 463.19693800000823,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 2,
+          "energy": 98.58475708050018
+        },
+        "4": {
+          "side": "RIGHT",
+          "right": true,
+          "hour": 0,
+          "message": "Удар по закрытой двери! Subject 06 отступил.",
+          "camera": 0,
+          "time": 477.01523109999835,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 3,
+          "energy": 92.79088905100228
+        },
+        "5": {
+          "side": "RIGHT",
+          "right": false,
+          "hour": 1,
+          "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+          "camera": 0,
+          "time": 503.86283870000625,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 2,
+          "energy": 91.49659558800008
+        },
+        "6": {
+          "side": "RIGHT",
+          "right": true,
+          "hour": 1,
+          "message": "Удар по закрытой двери! Subject 06 отступил.",
+          "camera": 0,
+          "time": 516.228351800004,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 3,
+          "energy": 86.31019178249926
+        },
+        "7": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 1,
+          "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+          "camera": 0,
+          "time": 539.743641500012,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 2,
+          "energy": 85.16549794700168
+        },
+        "8": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 2,
+          "message": "Удар по закрытой двери! Subject 06 отступил.",
+          "camera": 0,
+          "time": 555.059076000005,
+          "status": "RUNNING",
+          "left": true,
+          "stage": 3,
+          "energy": 78.54688381400221
+        },
+        "9": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 2,
+          "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+          "camera": 0,
+          "time": 580.4745760000078,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 2,
+          "energy": 77.32308641249803
+        },
+        "10": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 2,
+          "message": "Удар по закрытой двери! Subject 06 отступил.",
+          "camera": 0,
+          "time": 591.2416106000019,
+          "status": "RUNNING",
+          "left": true,
+          "stage": 3,
+          "energy": 72.72183377299599
+        },
+        "11": {
+          "side": "RIGHT",
+          "right": false,
+          "hour": 3,
+          "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+          "camera": 0,
+          "time": 618.957344800001,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 2,
+          "energy": 71.38783845250039
+        },
+        "12": {
+          "side": "RIGHT",
+          "right": true,
+          "hour": 3,
+          "message": "Удар по закрытой двери! Subject 06 отступил.",
+          "camera": 0,
+          "time": 630.4563589000027,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 3,
+          "energy": 66.49944716849906
+        },
+        "13": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 3,
+          "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+          "camera": 0,
+          "time": 655.4893780999992,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 2,
+          "energy": 65.28592739149981
+        },
+        "14": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 3,
+          "message": "Удар по закрытой двери! Subject 06 отступил.",
+          "camera": 0,
+          "time": 669.15576590001,
+          "status": "RUNNING",
+          "left": true,
+          "stage": 3,
+          "energy": 59.38951783699899
+        },
+        "15": {
+          "side": "RIGHT",
+          "right": false,
+          "hour": 4,
+          "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+          "camera": 0,
+          "time": 690.3043823000044,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 2,
+          "energy": 58.351401967997816
+        },
+        "16": {
+          "side": "RIGHT",
+          "right": true,
+          "hour": 4,
+          "message": "Удар по закрытой двери! Subject 06 отступил.",
+          "camera": 0,
+          "time": 700.8371946000116,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 3,
+          "energy": 53.97948859899576
+        },
+        "17": {
+          "side": "RIGHT",
+          "right": false,
+          "hour": 4,
+          "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+          "camera": 0,
+          "time": 725.3707969000097,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 2,
+          "energy": 52.795309911997784
+        },
+        "18": {
+          "side": "RIGHT",
+          "right": true,
+          "hour": 5,
+          "message": "Удар по закрытой двери! Subject 06 отступил.",
+          "camera": 0,
+          "time": 738.5693549999996,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 3,
+          "energy": 47.24170402649601
+        },
+        "19": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 5,
+          "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+          "camera": 0,
+          "time": 763.0686180000048,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 2,
+          "energy": 46.052791626994214
+        },
+        "20": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 5,
+          "message": "Удар по закрытой двери! Subject 06 отступил.",
+          "camera": 0,
+          "time": 772.8672608000052,
+          "status": "RUNNING",
+          "left": true,
+          "stage": 3,
+          "energy": 41.88355771099151
+        },
+        "21": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 5,
+          "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+          "camera": 0,
+          "time": 792.1170876000106,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 2,
+          "energy": 40.93721645049412
+        },
+        "22": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 6,
+          "message": "06:00. Рассвет! Ты пережил первую ночь.",
+          "camera": 0,
+          "time": 794.2166406000033,
+          "status": "WIN",
+          "left": true,
+          "stage": 2,
+          "energy": 40.28882965199456
+        }
+      }
+    },
+    "postWinCameraLayout": {
+      "panelsOverlap": false,
+      "labels": {
+        "1": {
+          "y": 22.230010986328125,
+          "h": 25,
+          "name": "Title",
+          "x": 44.135986328125,
+          "fits": true,
+          "w": 460,
+          "text": "CHERNOBYL / NIGHT 1 • CAM 2"
+        },
+        "2": {
+          "y": 51.230010986328125,
+          "h": 23,
+          "name": "Clock",
+          "x": 44.135986328125,
+          "fits": true,
+          "w": 460,
+          "text": "00:00  •  Энергия: 99%"
+        },
+        "3": {
+          "y": 78.23001098632812,
+          "h": 22,
+          "name": "Threat",
+          "x": 44.135986328125,
+          "fits": true,
+          "w": 460,
+          "text": "ДВИЖЕНИЕ СПРАВА — ЖДИ ШОРОХА"
+        },
+        "4": {
+          "y": 102.23001098632812,
+          "h": 49,
+          "name": "Notice",
+          "x": 44.135986328125,
+          "fits": true,
+          "w": 456,
+          "text": "00:00. Электричество ограничено. Следи за коридорами."
+        },
+        "5": {
+          "y": 356.97003173828125,
+          "h": 46,
+          "name": "LeftDoor",
+          "x": 32.135986328125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "Q · ЛЕВАЯ\nОТКРЫТА"
+        },
+        "6": {
+          "y": 356.97003173828125,
+          "h": 46,
+          "name": "RightDoor",
+          "x": 189.57598876953125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "E · ПРАВАЯ\nОТКРЫТА"
+        },
+        "7": {
+          "y": 356.97003173828125,
+          "h": 46,
+          "name": "StartNight",
+          "x": 347.0159912109375,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "ИДЁТ НОЧЬ"
+        },
+        "8": {
+          "y": 407.97003173828125,
+          "h": 46,
+          "name": "Camera1",
+          "x": 32.135986328125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "1 · ЛЕВЫЙ\nКОРИДОР"
+        },
+        "9": {
+          "y": 407.97003173828125,
+          "h": 46,
+          "name": "Camera2",
+          "x": 189.57598876953125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "2 · ПРАВЫЙ\nКОРИДОР"
+        },
+        "10": {
+          "y": 407.97003173828125,
+          "h": 46,
+          "name": "Camera3",
+          "x": 347.0159912109375,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "3 · ОБЗОР\nОФИСА"
+        },
+        "11": {
+          "y": 458.97003173828125,
+          "h": 46,
+          "name": "CloseCamera",
+          "x": 32.135986328125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "C · УБРАТЬ\nКАМЕРЫ"
+        }
+      },
+      "status": "RUNNING",
+      "topInset": "0, 58",
+      "panelHeight": 144,
+      "viewport": "1071.19995, 587.200012",
+      "controlsY": 356.97003173828125,
+      "ignoreInset": false,
+      "panelY": 13.230010986328125
+    },
+    "counts": {
+      "sounds": 5,
+      "maps": 1,
+      "remotes": 1,
+      "folders": 1,
+      "huds": 1
+    }
+  },
+  "output": "ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type",
+  "remaining": {
+    "humanMix": "NOT_TESTED",
+    "independentNewPlayer": "NOT_TESTED",
+    "targetExperiencePermissions": "NOT_TESTED",
+    "phoneGamepadLongSession": "NOT_TESTED",
+    "poorNetworkOnThisBuild": "NOT_RETESTED"
+  },
+  "pcReadyLayouts": {
+    "vga": {
+      "panelsOverlap": false,
+      "labels": {
+        "1": {
+          "y": 19.524993896484375,
+          "h": 25,
+          "name": "Title",
+          "x": 31.170013427734375,
+          "fits": true,
+          "w": 460,
+          "text": "CHERNOBYL / NIGHT 1"
+        },
+        "2": {
+          "y": 48.524993896484375,
+          "h": 23,
+          "name": "Clock",
+          "x": 31.170013427734375,
+          "fits": true,
+          "w": 460,
+          "text": "00:00  •  Энергия: 100%"
+        },
+        "3": {
+          "y": 75.52499389648438,
+          "h": 22,
+          "name": "Threat",
+          "x": 31.170013427734375,
+          "fits": true,
+          "w": 460,
+          "text": "ЦЕЛЬ: ДОЖИВИ ДО 06:00"
+        },
+        "4": {
+          "y": 99.52499389648438,
+          "h": 114,
+          "name": "Notice",
+          "x": 31.170013427734375,
+          "fits": true,
+          "w": 456,
+          "text": "Ночь длится 6 минут.\nПосле шороха: 1 / 2 — найди сторону угрозы.\nQ / E — закрой нужную дверь; C — убери камеры.\nПосле удара открой дверь: энергия ограничена.\nN или кнопка ниже — начать."
+        },
+        "5": {
+          "y": 251.47500610351562,
+          "h": 46,
+          "name": "LeftDoor",
+          "x": 19.170013427734375,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "Q · ЛЕВАЯ\nОТКРЫТА"
+        },
+        "6": {
+          "y": 251.47500610351562,
+          "h": 46,
+          "name": "RightDoor",
+          "x": 176.61001586914062,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "E · ПРАВАЯ\nОТКРЫТА"
+        },
+        "7": {
+          "y": 251.47500610351562,
+          "h": 46,
+          "name": "StartNight",
+          "x": 334.0500183105469,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "N · НАЧАТЬ\nНОЧЬ"
+        },
+        "8": {
+          "y": 302.4750061035156,
+          "h": 46,
+          "name": "Camera1",
+          "x": 19.170013427734375,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "1 · ЛЕВЫЙ\nКОРИДОР"
+        },
+        "9": {
+          "y": 302.4750061035156,
+          "h": 46,
+          "name": "Camera2",
+          "x": 176.61001586914062,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "2 · ПРАВЫЙ\nКОРИДОР"
+        },
+        "10": {
+          "y": 302.4750061035156,
+          "h": 46,
+          "name": "Camera3",
+          "x": 334.0500183105469,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "3 · ОБЗОР\nОФИСА"
+        },
+        "11": {
+          "y": 353.4750061035156,
+          "h": 46,
+          "name": "CloseCamera",
+          "x": 19.170013427734375,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "C · УБРАТЬ\nКАМЕРЫ"
+        }
+      },
+      "status": "READY",
+      "topInset": "0, 58",
+      "panelHeight": 210,
+      "viewport": "639, 479",
+      "controlsY": 251.47500610351562,
+      "ignoreInset": false,
+      "panelY": 10.524993896484375
+    },
+    "hd720": {
+      "panelsOverlap": false,
+      "labels": {
+        "1": {
+          "y": 25.550003051757812,
+          "h": 25,
+          "name": "Title",
+          "x": 50.3699951171875,
+          "fits": true,
+          "w": 460,
+          "text": "CHERNOBYL / NIGHT 1"
+        },
+        "2": {
+          "y": 54.55000305175781,
+          "h": 23,
+          "name": "Clock",
+          "x": 50.3699951171875,
+          "fits": true,
+          "w": 460,
+          "text": "00:00  •  Энергия: 100%"
+        },
+        "3": {
+          "y": 81.55000305175781,
+          "h": 22,
+          "name": "Threat",
+          "x": 50.3699951171875,
+          "fits": true,
+          "w": 460,
+          "text": "ЦЕЛЬ: ДОЖИВИ ДО 06:00"
+        },
+        "4": {
+          "y": 105.55000305175781,
+          "h": 114,
+          "name": "Notice",
+          "x": 50.3699951171875,
+          "fits": true,
+          "w": 456,
+          "text": "Ночь длится 6 минут.\nПосле шороха: 1 / 2 — найди сторону угрозы.\nQ / E — закрой нужную дверь; C — убери камеры.\nПосле удара открой дверь: энергия ограничена.\nN или кнопка ниже — начать."
+        },
+        "5": {
+          "y": 486.45001220703125,
+          "h": 46,
+          "name": "LeftDoor",
+          "x": 38.3699951171875,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "Q · ЛЕВАЯ\nОТКРЫТА"
+        },
+        "6": {
+          "y": 486.45001220703125,
+          "h": 46,
+          "name": "RightDoor",
+          "x": 195.80999755859375,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "E · ПРАВАЯ\nОТКРЫТА"
+        },
+        "7": {
+          "y": 486.45001220703125,
+          "h": 46,
+          "name": "StartNight",
+          "x": 353.25,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "N · НАЧАТЬ\nНОЧЬ"
+        },
+        "8": {
+          "y": 537.4500122070312,
+          "h": 46,
+          "name": "Camera1",
+          "x": 38.3699951171875,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "1 · ЛЕВЫЙ\nКОРИДОР"
+        },
+        "9": {
+          "y": 537.4500122070312,
+          "h": 46,
+          "name": "Camera2",
+          "x": 195.80999755859375,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "2 · ПРАВЫЙ\nКОРИДОР"
+        },
+        "10": {
+          "y": 537.4500122070312,
+          "h": 46,
+          "name": "Camera3",
+          "x": 353.25,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "3 · ОБЗОР\nОФИСА"
+        },
+        "11": {
+          "y": 588.4500122070312,
+          "h": 46,
+          "name": "CloseCamera",
+          "x": 38.3699951171875,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "C · УБРАТЬ\nКАМЕРЫ"
+        }
+      },
+      "status": "READY",
+      "topInset": "0, 58",
+      "panelHeight": 210,
+      "viewport": "1279, 720",
+      "controlsY": 486.45001220703125,
+      "ignoreInset": false,
+      "panelY": 16.550003051757812
+    },
+    "hd1080": {
+      "panelsOverlap": false,
+      "labels": {
+        "1": {
+          "y": 34.524993896484375,
+          "h": 25,
+          "name": "Title",
+          "x": 69.57000732421875,
+          "fits": true,
+          "w": 460,
+          "text": "CHERNOBYL / NIGHT 1"
+        },
+        "2": {
+          "y": 63.524993896484375,
+          "h": 23,
+          "name": "Clock",
+          "x": 69.57000732421875,
+          "fits": true,
+          "w": 460,
+          "text": "00:00  •  Энергия: 100%"
+        },
+        "3": {
+          "y": 90.52499389648438,
+          "h": 22,
+          "name": "Threat",
+          "x": 69.57000732421875,
+          "fits": true,
+          "w": 460,
+          "text": "ЦЕЛЬ: ДОЖИВИ ДО 06:00"
+        },
+        "4": {
+          "y": 114.52499389648438,
+          "h": 114,
+          "name": "Notice",
+          "x": 69.57000732421875,
+          "fits": true,
+          "w": 456,
+          "text": "Ночь длится 6 минут.\nПосле шороха: 1 / 2 — найди сторону угрозы.\nQ / E — закрой нужную дверь; C — убери камеры.\nПосле удара открой дверь: энергия ограничена.\nN или кнопка ниже — начать."
+        },
+        "5": {
+          "y": 836.47509765625,
+          "h": 46,
+          "name": "LeftDoor",
+          "x": 57.57001495361328,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "Q · ЛЕВАЯ\nОТКРЫТА"
+        },
+        "6": {
+          "y": 836.47509765625,
+          "h": 46,
+          "name": "RightDoor",
+          "x": 215.010009765625,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "E · ПРАВАЯ\nОТКРЫТА"
+        },
+        "7": {
+          "y": 836.47509765625,
+          "h": 46,
+          "name": "StartNight",
+          "x": 372.45001220703125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "N · НАЧАТЬ\nНОЧЬ"
+        },
+        "8": {
+          "y": 887.47509765625,
+          "h": 46,
+          "name": "Camera1",
+          "x": 57.57001495361328,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "1 · ЛЕВЫЙ\nКОРИДОР"
+        },
+        "9": {
+          "y": 887.47509765625,
+          "h": 46,
+          "name": "Camera2",
+          "x": 215.010009765625,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "2 · ПРАВЫЙ\nКОРИДОР"
+        },
+        "10": {
+          "y": 887.47509765625,
+          "h": 46,
+          "name": "Camera3",
+          "x": 372.45001220703125,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "3 · ОБЗОР\nОФИСА"
+        },
+        "11": {
+          "y": 938.47509765625,
+          "h": 46,
+          "name": "CloseCamera",
+          "x": 57.57001495361328,
+          "fits": true,
+          "w": 151.1999969482422,
+          "text": "C · УБРАТЬ\nКАМЕРЫ"
+        }
+      },
+      "status": "READY",
+      "topInset": "0, 58",
+      "panelHeight": 210,
+      "viewport": "1919, 1079",
+      "controlsY": 836.47509765625,
+      "ignoreInset": false,
+      "panelY": 25.524993896484375
+    }
+  },
+  "studioViewportRestored": true
+}

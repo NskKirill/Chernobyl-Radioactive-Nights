@@ -21,7 +21,7 @@ local message = remoteFolder:WaitForChild("Message")
 local gui = Instance.new("ScreenGui")
 gui.Name = "CRN_Night1_HUD"
 gui.ResetOnSpawn = false
-gui.IgnoreGuiInset = true
+gui.IgnoreGuiInset = false
 gui.Parent = player:WaitForChild("PlayerGui")
 
 local function panel(name, size, position, anchor)
@@ -41,7 +41,7 @@ local function panel(name, size, position, anchor)
 end
 local info = panel("SecurityMonitor", UDim2.new(0.94, 0, 0, 144), UDim2.new(0.03, 0, 0.025, 0), Vector2.new(0, 0))
 local cap = Instance.new("UISizeConstraint")
-cap.MaxSize = Vector2.new(480, 144)
+cap.MaxSize = Vector2.new(480, 210)
 cap.Parent = info
 local function label(parent, text, pos, size, fontSize, color)
     local l = Instance.new("TextLabel")
@@ -61,6 +61,11 @@ local title = label(info, "CHERNOBYL / NIGHT 1", UDim2.fromOffset(12, 9), UDim2.
 local clock = label(info, "00:00 • Энергия 100%", UDim2.fromOffset(12, 38), UDim2.new(1, -20, 0, 23), 17)
 local threat = label(info, "SUBJECT 06: неизвестно", UDim2.fromOffset(12, 65), UDim2.new(1, -20, 0, 22), 15, Color3.fromRGB(255, 161, 133))
 local notice = label(info, "", UDim2.fromOffset(12, 89), UDim2.new(1, -24, 0, 49), 13)
+title.Name = "Title"
+clock.Name = "Clock"
+threat.Name = "Threat"
+notice.Name = "Notice"
+notice.TextYAlignment = Enum.TextYAlignment.Top
 
 local controls = panel("Controls", UDim2.new(0.94, 0, 0, 159), UDim2.new(0.03, 0, 0.975, 0), Vector2.new(0, 1))
 local limit = Instance.new("UISizeConstraint")
@@ -93,31 +98,51 @@ end
 local leftButton = button("Левая дверь", "LeftDoor", 1)
 local rightButton = button("Правая дверь", "RightDoor", 2)
 local startButton = button("Начать ночь", "StartNight", 3)
-button("Камера 1 / Л", "Camera1", 4)
-button("Камера 2 / П", "Camera2", 5)
-button("Камера 3 / Офис", "Camera3", 6)
-button("Закрыть камеры", "CloseCamera", 7)
+button("1 · ЛЕВЫЙ\nКОРИДОР", "Camera1", 4)
+button("2 · ПРАВЫЙ\nКОРИДОР", "Camera2", 5)
+button("3 · ОБЗОР\nОФИСА", "Camera3", 6)
+button("C · УБРАТЬ\nКАМЕРЫ", "CloseCamera", 7)
 
 local function refresh()
     local result = status.Value
     clock.Text = string.format("%02d:00  •  Энергия: %d%%", hour.Value, math.floor(energy.Value + 0.5))
-    leftButton.Text = left.Value and "ЛЕВАЯ: ЗАКРЫТА" or "ЛЕВАЯ: ОТКРЫТА"
-    rightButton.Text = right.Value and "ПРАВАЯ: ЗАКРЫТА" or "ПРАВАЯ: ОТКРЫТА"
-    startButton.Text = result == "READY" and "НАЧАТЬ НОЧЬ" or (result == "RUNNING" and "ИДЁТ НОЧЬ" or "ЗАНОВО")
+    leftButton.Text = "Q · ЛЕВАЯ\n" .. (left.Value and "ЗАКРЫТА" or "ОТКРЫТА")
+    rightButton.Text = "E · ПРАВАЯ\n" .. (right.Value and "ЗАКРЫТА" or "ОТКРЫТА")
+    startButton.Text = result == "READY" and "N · НАЧАТЬ\nНОЧЬ" or (result == "RUNNING" and "ИДЁТ НОЧЬ" or "N · ЗАНОВО")
     startButton.BackgroundColor3 = result == "RUNNING" and Color3.fromRGB(62, 69, 65) or Color3.fromRGB(36, 110, 75)
-    if cameraIndex.Value == 0 then
-        threat.Text = "КАМЕРЫ ОТКЛЮЧЕНЫ — проверь коридоры"
+    if result == "READY" then
+        threat.Text = "ЦЕЛЬ: ДОЖИВИ ДО 06:00"
+    elseif result == "WIN" then
+        threat.Text = "СМЕНА ОКОНЧЕНА"
+    elseif result == "LOSE" then
+        threat.Text = "N — НОВАЯ ПОПЫТКА"
+    elseif cameraIndex.Value == 0 then
+        threat.Text = "1 / 2 — ПРОВЕРЬ КОРИДОРЫ"
     elseif cameraIndex.Value == 3 then
         threat.Text = "КАМЕРА 3: офис под наблюдением"
     else
         local selectedSide = cameraIndex.Value == 1 and "LEFT" or "RIGHT"
         if enemyStage.Value > 0 and enemySide.Value == selectedSide then
-            threat.Text = "SUBJECT 06: ОБНАРУЖЕН • этап " .. enemyStage.Value .. "/3"
+            local sideName = selectedSide == "LEFT" and "СЛЕВА" or "СПРАВА"
+            if enemyStage.Value >= 2 then
+                local doorKey = selectedSide == "LEFT" and "Q" or "E"
+                threat.Text = "ОБНАРУЖЕН " .. sideName .. " — ЗАКРОЙ " .. doorKey
+            else
+                threat.Text = "ДВИЖЕНИЕ " .. sideName .. " — ЖДИ ШОРОХА"
+            end
         else
             threat.Text = "КАМЕРА " .. cameraIndex.Value .. ": цель не обнаружена"
         end
     end
     notice.Text = message.Value
+    if result == "READY" then
+        info.Size = UDim2.new(0.94, 0, 0, 210)
+        notice.Size = UDim2.new(1, -24, 0, 114)
+        notice.Text = "Ночь длится 6 минут.\nПосле шороха: 1 / 2 — найди сторону угрозы.\nQ / E — закрой нужную дверь; C — убери камеры.\nПосле удара открой дверь: энергия ограничена.\nN или кнопка ниже — начать."
+    else
+        info.Size = UDim2.new(0.94, 0, 0, 144)
+        notice.Size = UDim2.new(1, -24, 0, 49)
+    end
     if result == "WIN" then
         title.Text = "06:00 — ПОБЕДА"
     elseif result == "LOSE" then
