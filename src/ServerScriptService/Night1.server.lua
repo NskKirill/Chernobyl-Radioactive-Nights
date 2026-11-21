@@ -6,7 +6,9 @@ local Lighting = game:GetService("Lighting")
 local SoundService = game:GetService("SoundService")
 
 local HOUR_SECONDS = 60 -- Six game-hours = six real minutes; adjust after playtests.
-local ENEMY_STEP_SECONDS = 13
+local ENEMY_STEP_MIN_SECONDS = 12
+local ENEMY_STEP_MAX_SECONDS = 16
+local ENEMY_PRESSURE_PER_HOUR = 0.6
 local DOOR_DRAIN_PER_SECOND = 0.4
 local rng = Random.new()
 
@@ -213,6 +215,13 @@ local lastTick = os.clock()
 local enemyTimer = 0
 local actionTimes = {}
 
+local function sampleEnemyStep()
+    -- Keep time to inspect both cameras; make later approaches less predictable.
+    local pressure = math.min(hour.Value, 5) * ENEMY_PRESSURE_PER_HOUR
+    return rng:NextNumber(ENEMY_STEP_MIN_SECONDS - pressure, ENEMY_STEP_MAX_SECONDS - pressure)
+end
+local nextEnemyStep = sampleEnemyStep()
+
 local function seatInOffice(player, character)
     local root = character:WaitForChild("HumanoidRootPart", 10)
     if not root then return end
@@ -236,6 +245,7 @@ local function startNight(player)
     startedAt = os.clock()
     lastTick = startedAt
     enemyTimer = 0
+    nextEnemyStep = sampleEnemyStep()
     light.Enabled = true
     ambience:Stop()
     ambience:Play()
@@ -330,8 +340,9 @@ while true do
             end
 
             enemyTimer += dt
-            if enemyTimer >= ENEMY_STEP_SECONDS then
-                enemyTimer -= ENEMY_STEP_SECONDS
+            if enemyTimer >= nextEnemyStep then
+                enemyTimer -= nextEnemyStep
+                nextEnemyStep = sampleEnemyStep()
                 if enemyStage.Value == 0 then
                     enemySide.Value = rng:NextInteger(1, 2) == 1 and "LEFT" or "RIGHT"
                 end
