@@ -244,8 +244,13 @@ action.OnServerEvent:Connect(function(player, command, ...)
     if select("#", ...) ~= 0 then return end
     if typeof(command) ~= "string" or not validActions[command] then return end
     local now = os.clock()
-    if now - (actionTimes[player] or 0) < 0.12 then return end
-    actionTimes[player] = now
+    local playerActions = actionTimes[player]
+    if not playerActions then
+        playerActions = {}
+        actionTimes[player] = playerActions
+    end
+    if now - (playerActions[command] or 0) < 0.12 then return end
+    playerActions[command] = now
     if command == "StartNight" then
         startNight(player)
         return
