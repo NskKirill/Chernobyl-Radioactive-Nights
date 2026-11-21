@@ -105,8 +105,18 @@ local function refresh()
     rightButton.Text = right.Value and "ПРАВАЯ: ЗАКРЫТА" or "ПРАВАЯ: ОТКРЫТА"
     startButton.Text = result == "READY" and "НАЧАТЬ НОЧЬ" or (result == "RUNNING" and "ИДЁТ НОЧЬ" or "ЗАНОВО")
     startButton.BackgroundColor3 = result == "RUNNING" and Color3.fromRGB(62, 69, 65) or Color3.fromRGB(36, 110, 75)
-    local stageText = enemyStage.Value == 0 and "не обнаружен" or ("этап " .. enemyStage.Value .. " / 3")
-    threat.Text = "SUBJECT 06: " .. stageText .. (enemyStage.Value > 0 and (" • " .. (enemySide.Value == "LEFT" and "ЛЕВЫЙ КОРИДОР" or "ПРАВЫЙ КОРИДОР")) or "")
+    if cameraIndex.Value == 0 then
+        threat.Text = "КАМЕРЫ ОТКЛЮЧЕНЫ — проверь коридоры"
+    elseif cameraIndex.Value == 3 then
+        threat.Text = "КАМЕРА 3: офис под наблюдением"
+    else
+        local selectedSide = cameraIndex.Value == 1 and "LEFT" or "RIGHT"
+        if enemyStage.Value > 0 and enemySide.Value == selectedSide then
+            threat.Text = "SUBJECT 06: ОБНАРУЖЕН • этап " .. enemyStage.Value .. "/3"
+        else
+            threat.Text = "КАМЕРА " .. cameraIndex.Value .. ": цель не обнаружена"
+        end
+    end
     notice.Text = message.Value
     if result == "WIN" then
         title.Text = "06:00 — ПОБЕДА"
