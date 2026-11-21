@@ -1,0 +1,17 @@
+{
+  "name": "ChernobylRadioactiveNights_Night1",
+  "tree": {
+    "$className": "DataModel",
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Night1.server.lua": { "$path": "src/ServerScriptService/Night1.server.lua" }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Night1HUD.client.lua": { "$path": "src/StarterPlayer/StarterPlayerScripts/Night1HUD.client.lua" }
+      }
+    }
+  }
+}
