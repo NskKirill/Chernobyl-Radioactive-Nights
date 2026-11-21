@@ -1,0 +1,754 @@
+{
+  "build": "Night1_COMPACT_CONTROLS_20261121.rbxl",
+  "sha256": "EFA0CC6E4338E7E67571F2CB90100CB7915FA90E574D7EFF4C1FA16537AF1B62",
+  "sourceCommit": "470efa843523fe75d65a69e7a641b23c21623c82",
+  "studioId": "48108e68-3899-4245-853d-63254f0b6140",
+  "sourceCheck": {
+    "hud": true,
+    "server": true,
+    "placeId": 0,
+    "universeId": 0
+  },
+  "buttonsPass": true,
+  "buttonEvents": [
+    {
+      "label": "StartNight",
+      "t": 80.10327430001053,
+      "status": "RUNNING",
+      "left": false,
+      "right": false,
+      "camera": 0
+    },
+    {
+      "label": "LeftDoor_close",
+      "t": 81.1351413000084,
+      "status": "RUNNING",
+      "left": true,
+      "right": false,
+      "camera": 0
+    },
+    {
+      "label": "RightDoor_close",
+      "t": 82.13560470000084,
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 0
+    },
+    {
+      "label": "Camera1",
+      "t": 83.15344590001041,
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 1
+    },
+    {
+      "label": "Camera2",
+      "t": 84.21995030000107,
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 2
+    },
+    {
+      "label": "Camera3",
+      "t": 85.2529271000094,
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 3
+    },
+    {
+      "label": "CloseCamera",
+      "t": 86.28633960000298,
+      "status": "RUNNING",
+      "left": true,
+      "right": true,
+      "camera": 0
+    },
+    {
+      "label": "LeftDoor_open",
+      "t": 87.30301250000775,
+      "status": "RUNNING",
+      "left": false,
+      "right": true,
+      "camera": 0
+    },
+    {
+      "label": "RightDoor_open",
+      "t": 88.38691690000996,
+      "status": "RUNNING",
+      "left": false,
+      "right": false,
+      "camera": 0
+    }
+  ],
+  "naturalLose": {
+    "controls": [
+      240,
+      48
+    ],
+    "threat": "N — НОВАЯ ПОПЫТКА",
+    "buttons": [
+      {
+        "visible": false,
+        "x": 40.13600158691406,
+        "name": "LeftDoor",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "Q · Левая: открыта",
+        "w": 108,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 154.13600158691406,
+        "name": "RightDoor",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "E · Правая: открыта",
+        "w": 108,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 40.13600158691406,
+        "name": "Camera1",
+        "h": 32,
+        "y": 513.9700317382812,
+        "text": "1 · Левый",
+        "w": 51,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 97.13600158691406,
+        "name": "Camera2",
+        "h": 32,
+        "y": 513.9700317382812,
+        "text": "2 · Правый",
+        "w": 51,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 154.13600158691406,
+        "name": "Camera3",
+        "h": 32,
+        "y": 513.9700317382812,
+        "text": "3 · Обзор",
+        "w": 51,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 211.13600158691406,
+        "name": "CloseCamera",
+        "h": 32,
+        "y": 513.9700317382812,
+        "text": "C · В офис",
+        "w": 51,
+        "fits": false
+      },
+      {
+        "visible": true,
+        "x": 40.13600158691406,
+        "name": "StartNight",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "N · Повторить",
+        "w": 224,
+        "fits": true
+      }
+    ],
+    "notice": "Subject 06 проник через открытую дверь.",
+    "t": 178.43301770000835,
+    "hour": 0,
+    "camera": 0,
+    "title": "НОЧЬ ПРОИГРАНА",
+    "status": "LOSE",
+    "right": false,
+    "energy": 92.62254298049493,
+    "left": false
+  },
+  "afterLoseRestart": {
+    "controls": [
+      420,
+      86
+    ],
+    "threat": "1 / 2 — ПРОВЕРЬ КОРИДОРЫ",
+    "buttons": [
+      {
+        "visible": true,
+        "x": 40.13600158691406,
+        "name": "LeftDoor",
+        "h": 32,
+        "y": 437.97003173828125,
+        "text": "Q · Левая: открыта",
+        "w": 198,
+        "fits": true
+      },
+      {
+        "visible": true,
+        "x": 244.135986328125,
+        "name": "RightDoor",
+        "h": 32,
+        "y": 437.97003173828125,
+        "text": "E · Правая: открыта",
+        "w": 198,
+        "fits": true
+      },
+      {
+        "visible": true,
+        "x": 40.13600158691406,
+        "name": "Camera1",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "1 · Левый",
+        "w": 96,
+        "fits": true
+      },
+      {
+        "visible": true,
+        "x": 142.13600158691406,
+        "name": "Camera2",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "2 · Правый",
+        "w": 96,
+        "fits": true
+      },
+      {
+        "visible": true,
+        "x": 244.135986328125,
+        "name": "Camera3",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "3 · Обзор",
+        "w": 96,
+        "fits": true
+      },
+      {
+        "visible": true,
+        "x": 346.135986328125,
+        "name": "CloseCamera",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "C · В офис",
+        "w": 96,
+        "fits": true
+      },
+      {
+        "visible": false,
+        "x": 40.13600158691406,
+        "name": "StartNight",
+        "h": 32,
+        "y": 437.97003173828125,
+        "text": "N · Повторить",
+        "w": 404,
+        "fits": true
+      }
+    ],
+    "notice": "00:00. Электричество ограничено. Следи за коридорами.",
+    "t": 179.59844700001122,
+    "hour": 0,
+    "camera": 0,
+    "title": "CHERNOBYL / NIGHT 1",
+    "status": "RUNNING",
+    "right": false,
+    "energy": 99.99252986949978,
+    "left": false
+  },
+  "naturalWin": {
+    "controls": [
+      240,
+      48
+    ],
+    "threat": "СМЕНА ОКОНЧЕНА",
+    "buttons": [
+      {
+        "visible": false,
+        "x": 40.13600158691406,
+        "name": "LeftDoor",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "Q · Левая: закрыта",
+        "w": 108,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 154.13600158691406,
+        "name": "RightDoor",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "E · Правая: открыта",
+        "w": 108,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 40.13600158691406,
+        "name": "Camera1",
+        "h": 32,
+        "y": 513.9700317382812,
+        "text": "1 · Левый",
+        "w": 51,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 97.13600158691406,
+        "name": "Camera2",
+        "h": 32,
+        "y": 513.9700317382812,
+        "text": "2 · Правый",
+        "w": 51,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 154.13600158691406,
+        "name": "Camera3",
+        "h": 32,
+        "y": 513.9700317382812,
+        "text": "3 · Обзор",
+        "w": 51,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 211.13600158691406,
+        "name": "CloseCamera",
+        "h": 32,
+        "y": 513.9700317382812,
+        "text": "C · В офис",
+        "w": 51,
+        "fits": false
+      },
+      {
+        "visible": true,
+        "x": 40.13600158691406,
+        "name": "StartNight",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "N · Повторить",
+        "w": 224,
+        "fits": true
+      }
+    ],
+    "notice": "06:00. Рассвет! Ты пережил первую ночь.",
+    "t": 573.9820664000144,
+    "hour": 6,
+    "camera": 0,
+    "title": "06:00 — ПОБЕДА",
+    "status": "WIN",
+    "right": false,
+    "energy": 37.93498864750854,
+    "left": true
+  },
+  "timings": [
+    {
+      "status": "RUNNING",
+      "t": 179.4147748000105
+    },
+    {
+      "status": "WIN",
+      "t": 539.4346279000019
+    }
+  ],
+  "winEvents": [
+    {
+      "type": "warningDefended",
+      "t": 207.38024060000316,
+      "hour": 0,
+      "door": "Q",
+      "visibleClue": "ОБНАРУЖЕН СЛЕВА — ЗАКРОЙ Q",
+      "energy": 98.41750344499906
+    },
+    {
+      "type": "doorReopened",
+      "t": 221.74698880000506,
+      "door": "Q",
+      "energy": 92.00222858499959
+    },
+    {
+      "type": "warningDefended",
+      "t": 249.31253560000914,
+      "hour": 1,
+      "door": "E",
+      "visibleClue": "ОБНАРУЖЕН СПРАВА — ЗАКРОЙ E",
+      "energy": 90.21181959400342
+    },
+    {
+      "type": "doorReopened",
+      "t": 260.3293277000048,
+      "door": "E",
+      "energy": 85.36168841000391
+    },
+    {
+      "type": "warningDefended",
+      "t": 290.9613696000015,
+      "hour": 1,
+      "door": "E",
+      "visibleClue": "ОБНАРУЖЕН СПРАВА — ЗАКРОЙ E",
+      "energy": 83.5334803375004
+    },
+    {
+      "type": "doorReopened",
+      "t": 303.07690730001195,
+      "door": "E",
+      "energy": 78.16437266500067
+    },
+    {
+      "type": "warningDefended",
+      "t": 327.89311270001053,
+      "hour": 2,
+      "door": "Q",
+      "visibleClue": "ОБНАРУЖЕН СЛЕВА — ЗАКРОЙ Q",
+      "energy": 76.54309397550368
+    },
+    {
+      "type": "doorReopened",
+      "t": 337.80912940000417,
+      "door": "Q",
+      "energy": 72.1675153305047
+    },
+    {
+      "type": "warningDefended",
+      "t": 364.723510300013,
+      "hour": 3,
+      "door": "Q",
+      "visibleClue": "ОБНАРУЖЕН СЛЕВА — ЗАКРОЙ Q",
+      "energy": 70.54792194849728
+    },
+    {
+      "type": "doorReopened",
+      "t": 373.5579790000047,
+      "door": "Q",
+      "energy": 66.59547168700298
+    },
+    {
+      "type": "warningDefended",
+      "t": 399.62212980000186,
+      "hour": 3,
+      "door": "Q",
+      "visibleClue": "ОБНАРУЖЕН СЛЕВА — ЗАКРОЙ Q",
+      "energy": 64.94470718800568
+    },
+    {
+      "type": "doorReopened",
+      "t": 411.7568256000086,
+      "door": "Q",
+      "energy": 59.546111056501296
+    },
+    {
+      "type": "warningDefended",
+      "t": 434.238711900005,
+      "hour": 4,
+      "door": "Q",
+      "visibleClue": "ОБНАРУЖЕН СЛЕВА — ЗАКРОЙ Q",
+      "energy": 58.109661971505204
+    },
+    {
+      "type": "doorReopened",
+      "t": 445.3042753000045,
+      "door": "Q",
+      "energy": 53.14073452200275
+    },
+    {
+      "type": "warningDefended",
+      "t": 470.6715356000059,
+      "hour": 4,
+      "door": "E",
+      "visibleClue": "ОБНАРУЖЕН СПРАВА — ЗАКРОЙ E",
+      "energy": 51.54659304200329
+    },
+    {
+      "type": "doorReopened",
+      "t": 480.6204267000139,
+      "door": "E",
+      "energy": 47.20812121150387
+    },
+    {
+      "type": "warningDefended",
+      "t": 504.3703843000112,
+      "hour": 5,
+      "door": "Q",
+      "visibleClue": "ОБНАРУЖЕН СЛЕВА — ЗАКРОЙ Q",
+      "energy": 45.72477337100322
+    },
+    {
+      "type": "doorReopened",
+      "t": 514.3178974000039,
+      "door": "Q",
+      "energy": 41.32670544950055
+    },
+    {
+      "type": "warningDefended",
+      "t": 534.8015950000117,
+      "hour": 5,
+      "door": "Q",
+      "visibleClue": "ОБНАРУЖЕН СЛЕВА — ЗАКРОЙ Q",
+      "energy": 39.973811416508575
+    }
+  ],
+  "winDefenses": 9,
+  "afterWinRestart": {
+    "enemySide": "LEFT",
+    "notice": "00:00. Электричество ограничено. Следи за коридорами.",
+    "right": false,
+    "hour": 0,
+    "startVisible": false,
+    "controlSize": [
+      420,
+      86
+    ],
+    "camera": 0,
+    "sounds": [
+      {
+        "loaded": true,
+        "name": "Alarm",
+        "playing": false
+      },
+      {
+        "loaded": true,
+        "name": "Win",
+        "playing": false
+      },
+      {
+        "loaded": true,
+        "name": "BunkerHum",
+        "playing": true
+      },
+      {
+        "loaded": true,
+        "name": "Lose",
+        "playing": false
+      },
+      {
+        "loaded": true,
+        "name": "Door",
+        "playing": false
+      }
+    ],
+    "hudCount": 1,
+    "status": "RUNNING",
+    "enemyStage": 0,
+    "energy": 99.99029430100018,
+    "left": false
+  },
+  "publication": {
+    "status": "WAITING_DATA_SHARING_CHOICE",
+    "name": "Chernobyl: Radioactive Nights - Night 1",
+    "description": "Первая ночь на заброшенном объекте Чернобыля. Следи за тремя камерами, управляй двумя дверями и береги энергию. Доживи до 06:00 — одна ночь длится 6 минут.\n\nОдиночная игра для ПК.\nQ / E — двери; 1 / 2 / 3 — камеры; C — в офис; N — начать или повторить.",
+    "devicesInDraft": [
+      "Computer"
+    ],
+    "creatorInDraft": "Me",
+    "dataSharingDefaultObserved": true,
+    "dataSharingChangedByAgent": false,
+    "teamCreateDefaultObserved": true,
+    "requiredMaxPlayers": 1,
+    "maxPlayersConfigured": false,
+    "placeId": 0,
+    "universeId": 0,
+    "url": null
+  },
+  "driveInputs": "Ordinary mouse/keyboard; threat chosen from visible HUD camera text; no game state writes or timer changes",
+  "subsequentNightAfterWin": {
+    "controls": [
+      240,
+      48
+    ],
+    "threat": "N — НОВАЯ ПОПЫТКА",
+    "buttons": [
+      {
+        "visible": false,
+        "x": 40.13600158691406,
+        "name": "LeftDoor",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "Q · Левая: открыта",
+        "w": 108,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 154.13600158691406,
+        "name": "RightDoor",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "E · Правая: открыта",
+        "w": 108,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 40.13600158691406,
+        "name": "Camera1",
+        "h": 32,
+        "y": 513.9700317382812,
+        "text": "1 · Левый",
+        "w": 51,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 97.13600158691406,
+        "name": "Camera2",
+        "h": 32,
+        "y": 513.9700317382812,
+        "text": "2 · Правый",
+        "w": 51,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 154.13600158691406,
+        "name": "Camera3",
+        "h": 32,
+        "y": 513.9700317382812,
+        "text": "3 · Обзор",
+        "w": 51,
+        "fits": false
+      },
+      {
+        "visible": false,
+        "x": 211.13600158691406,
+        "name": "CloseCamera",
+        "h": 32,
+        "y": 513.9700317382812,
+        "text": "C · В офис",
+        "w": 51,
+        "fits": false
+      },
+      {
+        "visible": true,
+        "x": 40.13600158691406,
+        "name": "StartNight",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "N · Повторить",
+        "w": 224,
+        "fits": true
+      }
+    ],
+    "notice": "Subject 06 проник через открытую дверь.",
+    "t": 639.0132208000141,
+    "hour": 0,
+    "camera": 0,
+    "title": "НОЧЬ ПРОИГРАНА",
+    "status": "LOSE",
+    "right": false,
+    "energy": 98.17460540650028,
+    "left": false
+  },
+  "lastRestart": {
+    "controls": [
+      420,
+      86
+    ],
+    "threat": "1 / 2 — ПРОВЕРЬ КОРИДОРЫ",
+    "buttons": [
+      {
+        "visible": true,
+        "x": 40.13600158691406,
+        "name": "LeftDoor",
+        "h": 32,
+        "y": 437.97003173828125,
+        "text": "Q · Левая: открыта",
+        "w": 198,
+        "fits": true
+      },
+      {
+        "visible": true,
+        "x": 244.135986328125,
+        "name": "RightDoor",
+        "h": 32,
+        "y": 437.97003173828125,
+        "text": "E · Правая: открыта",
+        "w": 198,
+        "fits": true
+      },
+      {
+        "visible": true,
+        "x": 40.13600158691406,
+        "name": "Camera1",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "1 · Левый",
+        "w": 96,
+        "fits": true
+      },
+      {
+        "visible": true,
+        "x": 142.13600158691406,
+        "name": "Camera2",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "2 · Правый",
+        "w": 96,
+        "fits": true
+      },
+      {
+        "visible": true,
+        "x": 244.135986328125,
+        "name": "Camera3",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "3 · Обзор",
+        "w": 96,
+        "fits": true
+      },
+      {
+        "visible": true,
+        "x": 346.135986328125,
+        "name": "CloseCamera",
+        "h": 32,
+        "y": 475.97003173828125,
+        "text": "C · В офис",
+        "w": 96,
+        "fits": true
+      },
+      {
+        "visible": false,
+        "x": 40.13600158691406,
+        "name": "StartNight",
+        "h": 32,
+        "y": 437.97003173828125,
+        "text": "N · Повторить",
+        "w": 404,
+        "fits": true
+      }
+    ],
+    "notice": "00:00. Электричество ограничено. Следи за коридорами.",
+    "t": 639.8147655000066,
+    "hour": 0,
+    "camera": 0,
+    "title": "CHERNOBYL / NIGHT 1",
+    "status": "RUNNING",
+    "right": false,
+    "energy": 99.99330354550003,
+    "left": false
+  },
+  "finalCounts": {
+    "sounds": 5,
+    "maps": 1,
+    "enemySide": "LEFT",
+    "huds": 1,
+    "remotes": 1,
+    "enemyStage": 0,
+    "states": 1
+  },
+  "allRequestedLocalChecksPassed": true,
+  "actualNightSeconds": 360.01985309999145,
+  "notTested": [
+    "Human listening/independent newcomer",
+    "Public server join and target experience audio access",
+    "Physical mobile/gamepad",
+    "Long session performance",
+    "Hotkey Three on this exact QA (Camera3 mouse tested)"
+  ]
+}
