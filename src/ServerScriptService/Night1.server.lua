@@ -7,6 +7,7 @@ local SoundService = game:GetService("SoundService")
 
 local HOUR_SECONDS = 60 -- Six game-hours = six real minutes; adjust after playtests.
 local ENEMY_STEP_SECONDS = 13
+local DOOR_DRAIN_PER_SECOND = 0.4
 local rng = Random.new()
 
 local function ensure(parent, className, name)
@@ -87,20 +88,38 @@ local function block(name, pos, size, color, material)
 end
 
 block("OfficeFloor", Vector3.new(0, 0, 0), Vector3.new(46, 1, 32), Color3.fromRGB(43, 48, 46))
-block("LeftCorridor", Vector3.new(-18, 0, -35), Vector3.new(11, 1, 50), Color3.fromRGB(34, 38, 36))
-block("RightCorridor", Vector3.new(18, 0, -35), Vector3.new(11, 1, 50), Color3.fromRGB(34, 38, 36))
+block("LeftCorridor", Vector3.new(-11, 0, -35), Vector3.new(8, 1, 50), Color3.fromRGB(34, 38, 36))
+block("RightCorridor", Vector3.new(11, 0, -35), Vector3.new(8, 1, 50), Color3.fromRGB(34, 38, 36))
 block("RearWall", Vector3.new(0, 7, 15), Vector3.new(46, 14, 2), Color3.fromRGB(48, 53, 52))
 block("LeftWall", Vector3.new(-23, 7, 0), Vector3.new(2, 14, 32), Color3.fromRGB(47, 53, 50))
 block("RightWall", Vector3.new(23, 7, 0), Vector3.new(2, 14, 32), Color3.fromRGB(47, 53, 50))
-block("FrontWallCenter", Vector3.new(0, 7, -16), Vector3.new(13, 14, 2), Color3.fromRGB(47, 53, 50))
+block("FrontWallCenter", Vector3.new(0, 7, -16), Vector3.new(16, 14, 2), Color3.fromRGB(47, 53, 50))
+block("FrontWallLeft", Vector3.new(-18, 7, -16), Vector3.new(8, 14, 2), Color3.fromRGB(47, 53, 50))
+block("FrontWallRight", Vector3.new(18, 7, -16), Vector3.new(8, 14, 2), Color3.fromRGB(47, 53, 50))
+block("OfficeRoof", Vector3.new(0, 14.5, 0), Vector3.new(46, 1, 32), Color3.fromRGB(37, 43, 40))
+for _, side in ipairs({-1, 1}) do
+    local x = side * 11
+    block("DoorHeader", Vector3.new(x, 12.25, -16), Vector3.new(6, 3.5, 2), Color3.fromRGB(47, 53, 50))
+    block("CorridorWall", Vector3.new(x - 4, 7, -37), Vector3.new(2, 14, 46), Color3.fromRGB(37, 43, 40))
+    block("CorridorWall", Vector3.new(x + 4, 7, -37), Vector3.new(2, 14, 46), Color3.fromRGB(37, 43, 40))
+    block("CorridorEnd", Vector3.new(x, 7, -60), Vector3.new(10, 14, 2), Color3.fromRGB(37, 43, 40))
+    block("CorridorRoof", Vector3.new(x, 14.5, -37), Vector3.new(10, 1, 46), Color3.fromRGB(37, 43, 40))
+    local bulb = block("CorridorLamp", Vector3.new(x, 12, -35), Vector3.new(2, 0.3, 1), Color3.fromRGB(172, 196, 174), Enum.Material.Neon)
+    local glow = Instance.new("PointLight")
+    glow.Range = 28
+    glow.Brightness = 0.5
+    glow.Color = bulb.Color
+    glow.Parent = bulb
+end
 block("SecurityDesk", Vector3.new(0, 2, 5), Vector3.new(12, 3, 3), Color3.fromRGB(56, 61, 55), Enum.Material.Metal)
 
-local leftDoor = block("LeftSecurityDoor", Vector3.new(-11, 5, -16), Vector3.new(6, 10, 1.5), Color3.fromRGB(130, 42, 38), Enum.Material.Metal)
-local rightDoor = block("RightSecurityDoor", Vector3.new(11, 5, -16), Vector3.new(6, 10, 1.5), Color3.fromRGB(130, 42, 38), Enum.Material.Metal)
+local leftDoor = block("LeftSecurityDoor", Vector3.new(-11, 5.5, -16), Vector3.new(6, 10, 1.5), Color3.fromRGB(130, 42, 38), Enum.Material.Metal)
+local rightDoor = block("RightSecurityDoor", Vector3.new(11, 5.5, -16), Vector3.new(6, 10, 1.5), Color3.fromRGB(130, 42, 38), Enum.Material.Metal)
 local function updateDoors()
     for _, pair in ipairs({{leftDoor, leftDoorClosed.Value}, {rightDoor, rightDoorClosed.Value}}) do
         local door, closed = pair[1], pair[2]
-        door.Transparency = closed and 0 or 0.75
+        door.Position = Vector3.new(door.Position.X, closed and 5.5 or 15.5, -16)
+        door.Transparency = 0
         door.CanCollide = closed
         door.Color = closed and Color3.fromRGB(170, 48, 43) or Color3.fromRGB(62, 122, 77)
     end
@@ -125,8 +144,8 @@ local function cameraAnchor(name, pos, lookAt)
     p.CFrame = CFrame.lookAt(pos, lookAt)
     p.Parent = anchors
 end
-cameraAnchor("Camera1", Vector3.new(-22, 10, -14), Vector3.new(-18, 3, -35))
-cameraAnchor("Camera2", Vector3.new(22, 10, -14), Vector3.new(18, 3, -35))
+cameraAnchor("Camera1", Vector3.new(-13, 11, -18), Vector3.new(-11, 4, -40))
+cameraAnchor("Camera2", Vector3.new(13, 11, -18), Vector3.new(11, 4, -40))
 cameraAnchor("Camera3", Vector3.new(0, 13, -10), Vector3.new(0, 4, 0))
 cameraAnchor("OfficeView", Vector3.new(0, 6, 6), Vector3.new(0, 5, -16))
 
@@ -173,11 +192,8 @@ local function positionEnemy()
         enemy.CFrame = CFrame.lookAt(Vector3.new(0, 4, -65), Vector3.new(0, 4, 9))
         return
     end
-    local x = enemySide.Value == "LEFT" and -18 or 18
+    local x = enemySide.Value == "LEFT" and -11 or 11
     local z = ({-45, -30, -19})[enemyStage.Value] or -45
-    if enemyStage.Value == 3 then
-        x = enemySide.Value == "LEFT" and -11 or 11
-    end
     enemy.CFrame = CFrame.lookAt(Vector3.new(x, 4, z), Vector3.new(0, 4, 9))
 end
 
@@ -300,8 +316,8 @@ while true do
             finishNight("WIN", "06:00. Рассвет! Ты пережил первую ночь.")
         else
             local drain = 0.045
-            if leftDoorClosed.Value then drain += 0.19 end
-            if rightDoorClosed.Value then drain += 0.19 end
+            if leftDoorClosed.Value then drain += DOOR_DRAIN_PER_SECOND end
+            if rightDoorClosed.Value then drain += DOOR_DRAIN_PER_SECOND end
             if cameraIndex.Value > 0 then drain += 0.10 end
             energy.Value = math.max(0, energy.Value - drain * dt)
             light.Enabled = energy.Value > 0

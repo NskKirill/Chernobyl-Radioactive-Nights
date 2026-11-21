@@ -1,0 +1,680 @@
+{
+  "date": "2026-11-21",
+  "baseCommit": "1cdbbf787ad29e12a91e6e9f7222fa1580d7ba78",
+  "build": "Night1_RELEASE_20261121.rbxl",
+  "buildPath": "C:\\Users\\admin\\Downloads\\ChernobylRadioactiveNights_Night1\\outputs\\night1_release_qa_20261121\\Night1_RELEASE_20261121.rbxl",
+  "sha256": "919DC3D77195D079EF8EB312F2E521664BC0C5B5700D6C874B6FF69F52A5FF07",
+  "studioId": "39c487e8-0b32-4237-93a3-261dc2accbc0",
+  "testMethod": "Studio normal keyboard N/Q/E/1/2/3/C. Controller observes public Message and camera HUD text. Diagnostic Luau reads state and collision rays; no assignment of time, resources, progress, enemy position or outcome.",
+  "blind": {
+    "result": {
+      "message": "Subject 06 проник через открытую дверь.",
+      "camera": 0,
+      "hour": 5,
+      "status": "LOSE",
+      "right": false,
+      "energy": 0,
+      "left": false
+    },
+    "seconds": 351.15334319999965
+  },
+  "smart": {
+    "result": {
+      "message": "06:00. Рассвет! Ты пережил первую ночь.",
+      "camera": 0,
+      "hour": 6,
+      "status": "WIN",
+      "right": false,
+      "energy": 46.39250447900142,
+      "left": false
+    },
+    "seconds": 360.03541589999804,
+    "deflections": 9,
+    "cameraChecks": [
+      {
+        "side": "RIGHT",
+        "y": 300.3320007324219,
+        "x": 503.0093994140625,
+        "onScreen": true
+      },
+      {
+        "side": "LEFT",
+        "y": 300.3320007324219,
+        "x": 567.9906005859375,
+        "onScreen": true
+      },
+      {
+        "side": "LEFT",
+        "y": 300.3320007324219,
+        "x": 567.9906005859375,
+        "onScreen": true
+      },
+      {
+        "side": "LEFT",
+        "y": 300.3320007324219,
+        "x": 567.9906005859375,
+        "onScreen": true
+      },
+      {
+        "side": "RIGHT",
+        "y": 300.3320007324219,
+        "x": 503.0093994140625,
+        "onScreen": true
+      },
+      {
+        "side": "RIGHT",
+        "y": 300.3320007324219,
+        "x": 503.0093994140625,
+        "onScreen": true
+      },
+      {
+        "side": "LEFT",
+        "y": 300.3320007324219,
+        "x": 567.9906005859375,
+        "onScreen": true
+      },
+      {
+        "side": "RIGHT",
+        "y": 300.3320007324219,
+        "x": 503.0093994140625,
+        "onScreen": true
+      },
+      {
+        "side": "RIGHT",
+        "y": 300.3320007324219,
+        "x": 503.0093994140625,
+        "onScreen": true
+      }
+    ]
+  },
+  "winRestart": {
+    "CameraPosition": "0, 6, 6",
+    "EnemySide": "LEFT",
+    "CameraIndex": 0,
+    "Hour": 0,
+    "Message": "00:00. Электричество ограничено. Следи за коридорами.",
+    "CameraType": "Scriptable",
+    "RightDoorClosed": false,
+    "Status": "RUNNING",
+    "EnemyStage": 0,
+    "Energy": 99.99322156449983,
+    "LeftDoorClosed": false
+  },
+  "loseRestart": {
+    "message": "00:00. Электричество ограничено. Следи за коридорами.",
+    "camera": 0,
+    "hour": 0,
+    "status": "RUNNING",
+    "right": false,
+    "energy": 99.99255729699973,
+    "left": false
+  },
+  "runningN": {
+    "before": {
+      "message": "00:00. Электричество ограничено. Следи за коридорами.",
+      "camera": 0,
+      "hour": 0,
+      "status": "RUNNING",
+      "right": false,
+      "energy": 99.02781518299977,
+      "left": false
+    },
+    "after": {
+      "message": "00:00. Электричество ограничено. Следи за коридорами.",
+      "camera": 0,
+      "hour": 0,
+      "status": "RUNNING",
+      "right": false,
+      "energy": 98.99924703649981,
+      "left": false
+    }
+  },
+  "camera3": {
+    "CameraPosition": "0, 13, -10",
+    "EnemySide": "LEFT",
+    "CameraIndex": 3,
+    "Hour": 0,
+    "Message": "00:00. Электричество ограничено. Следи за коридорами.",
+    "CameraType": "Scriptable",
+    "RightDoorClosed": true,
+    "Status": "RUNNING",
+    "EnemyStage": 0,
+    "Energy": 99.3306898239939,
+    "LeftDoorClosed": true
+  },
+  "visibleCamera": {
+    "CameraPosition": "-13, 11, -18",
+    "EnemySide": "LEFT",
+    "CameraIndex": 1,
+    "Hour": 0,
+    "Message": "00:00. Электричество ограничено. Следи за коридорами.",
+    "CameraType": "Scriptable",
+    "RightDoorClosed": false,
+    "Status": "RUNNING",
+    "EnemyStage": 1,
+    "Energy": 98.23756737550048,
+    "LeftDoorClosed": false
+  },
+  "geometryClosed": {
+    "rightAligned": true,
+    "roof": true,
+    "leftY": 5.5,
+    "leftAligned": true,
+    "gaps": 0,
+    "rightY": 5.5,
+    "rightClear": false,
+    "leftClear": false
+  },
+  "geometryOpen": {
+    "rightAligned": true,
+    "roof": true,
+    "leftY": 15.5,
+    "leftAligned": true,
+    "gaps": 60,
+    "rightY": 15.5,
+    "rightClear": true,
+    "leftClear": true
+  },
+  "countsAfterRestarts": {
+    "sounds": 5,
+    "maps": 1,
+    "remotes": 1,
+    "stateChildren": 10,
+    "stateFolders": 1
+  },
+  "output": "ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type",
+  "trace": [
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 0,
+      "message": "00:00. Электричество ограничено. Следи за коридорами.",
+      "camera": 0,
+      "time": 472.12064400000963,
+      "status": "RUNNING",
+      "energy": 100,
+      "stage": 0,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 0,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 498.25432659999933,
+      "status": "RUNNING",
+      "energy": 98.82406400049986,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": true,
+      "hour": 0,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 511.23660020000534,
+      "status": "RUNNING",
+      "energy": 89.85410680950001,
+      "stage": 0,
+      "left": true
+    },
+    {
+      "side": "RIGHT",
+      "right": false,
+      "hour": 1,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 537.3185836000048,
+      "status": "RUNNING",
+      "energy": 88.43995539350001,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "RIGHT",
+      "right": true,
+      "hour": 1,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 550.2186693999975,
+      "status": "RUNNING",
+      "energy": 80.17415548450613,
+      "stage": 0,
+      "left": true
+    },
+    {
+      "side": "RIGHT",
+      "right": false,
+      "hour": 1,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 576.2667089000024,
+      "status": "RUNNING",
+      "energy": 78.3342493625014,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "RIGHT",
+      "right": true,
+      "hour": 1,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 589.2496298000042,
+      "status": "RUNNING",
+      "energy": 70.0567275440021,
+      "stage": 0,
+      "left": true
+    },
+    {
+      "side": "RIGHT",
+      "right": false,
+      "hour": 2,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 615.2160721999971,
+      "status": "RUNNING",
+      "energy": 68.71584912100171,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "RIGHT",
+      "right": true,
+      "hour": 2,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 628.2141482000006,
+      "status": "RUNNING",
+      "energy": 60.331007318002925,
+      "stage": 0,
+      "left": true
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 3,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 654.1800146000023,
+      "status": "RUNNING",
+      "energy": 55.32248865751023,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": true,
+      "hour": 3,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 667.2963285000005,
+      "status": "RUNNING",
+      "energy": 46.27936272000794,
+      "stage": 0,
+      "left": true
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 3,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 693.2292297000095,
+      "status": "RUNNING",
+      "energy": 41.99274123300791,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": true,
+      "hour": 3,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 706.2283551,
+      "status": "RUNNING",
+      "energy": 32.45432535301364,
+      "stage": 0,
+      "left": true
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 4,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 732.1767304000095,
+      "status": "RUNNING",
+      "energy": 28.620057043010377,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": true,
+      "hour": 4,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 745.1263906000095,
+      "status": "RUNNING",
+      "energy": 18.59202555850657,
+      "stage": 0,
+      "left": true
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 4,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 771.1250829000055,
+      "status": "RUNNING",
+      "energy": 15.261506337510928,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": true,
+      "hour": 5,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 784.1921402000007,
+      "status": "RUNNING",
+      "energy": 4.640345305014254,
+      "stage": 0,
+      "left": true
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 5,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 810.207272700005,
+      "status": "RUNNING",
+      "energy": 1.977323659016603,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 5,
+      "message": "Энергия закончилась! Обе двери открыты.",
+      "camera": 0,
+      "time": 816.7582858000096,
+      "status": "RUNNING",
+      "energy": 0,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 5,
+      "message": "Subject 06 проник через открытую дверь.",
+      "camera": 0,
+      "time": 823.2739872000093,
+      "status": "LOSE",
+      "energy": 0,
+      "stage": 3,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 0,
+      "message": "00:00. Электричество ограничено. Следи за коридорами.",
+      "camera": 0,
+      "time": 824.37442990001,
+      "status": "RUNNING",
+      "energy": 100,
+      "stage": 0,
+      "left": false
+    },
+    {
+      "side": "RIGHT",
+      "right": false,
+      "hour": 0,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 850.5397480000101,
+      "status": "RUNNING",
+      "energy": 98.82258093999968,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "RIGHT",
+      "right": true,
+      "hour": 0,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 863.422344400009,
+      "status": "RUNNING",
+      "energy": 94.20456439350137,
+      "stage": 0,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 1,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 889.4218497999973,
+      "status": "RUNNING",
+      "energy": 92.78128337650048,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 1,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 902.5716944000014,
+      "status": "RUNNING",
+      "energy": 88.18617637199844,
+      "stage": 0,
+      "left": true
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 1,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 928.4530655999988,
+      "status": "RUNNING",
+      "energy": 86.94125209599758,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 1,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 941.5368603000097,
+      "status": "RUNNING",
+      "energy": 82.30728657949997,
+      "stage": 0,
+      "left": true
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 2,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 967.434196400005,
+      "status": "RUNNING",
+      "energy": 81.05569595200174,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 2,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 980.4349546000012,
+      "status": "RUNNING",
+      "energy": 76.44403525600087,
+      "stage": 0,
+      "left": true
+    },
+    {
+      "side": "RIGHT",
+      "right": false,
+      "hour": 3,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 1006.4659921999992,
+      "status": "RUNNING",
+      "energy": 75.18572773800376,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "RIGHT",
+      "right": true,
+      "hour": 3,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 1019.4819336000073,
+      "status": "RUNNING",
+      "energy": 70.61871780100138,
+      "stage": 0,
+      "left": false
+    },
+    {
+      "side": "RIGHT",
+      "right": false,
+      "hour": 3,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 1045.5311636999977,
+      "status": "RUNNING",
+      "energy": 69.2792355504999,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "RIGHT",
+      "right": true,
+      "hour": 3,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 1058.5306442,
+      "status": "RUNNING",
+      "energy": 64.86099941750005,
+      "stage": 0,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 4,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 1084.414493400007,
+      "status": "RUNNING",
+      "energy": 63.36348179899662,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 4,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 1097.5303475999972,
+      "status": "RUNNING",
+      "energy": 58.95526568099532,
+      "stage": 0,
+      "left": true
+    },
+    {
+      "side": "RIGHT",
+      "right": false,
+      "hour": 4,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 1123.5616678000079,
+      "status": "RUNNING",
+      "energy": 57.45053468699654,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "RIGHT",
+      "right": true,
+      "hour": 5,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 1136.3946319000097,
+      "status": "RUNNING",
+      "energy": 53.20506138349644,
+      "stage": 0,
+      "left": false
+    },
+    {
+      "side": "RIGHT",
+      "right": false,
+      "hour": 5,
+      "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+      "camera": 0,
+      "time": 1162.409876100006,
+      "status": "RUNNING",
+      "energy": 51.521163623501266,
+      "stage": 2,
+      "left": false
+    },
+    {
+      "side": "RIGHT",
+      "right": true,
+      "hour": 5,
+      "message": "Удар по закрытой двери! Subject 06 отступил.",
+      "camera": 0,
+      "time": 1175.4278420000046,
+      "status": "RUNNING",
+      "energy": 47.45359618749983,
+      "stage": 0,
+      "left": false
+    },
+    {
+      "side": "RIGHT",
+      "right": false,
+      "hour": 6,
+      "message": "06:00. Рассвет! Ты пережил первую ночь.",
+      "camera": 0,
+      "time": 1184.409845800008,
+      "status": "WIN",
+      "energy": 46.39250447900142,
+      "stage": 0,
+      "left": false
+    },
+    {
+      "side": "LEFT",
+      "right": false,
+      "hour": 0,
+      "message": "00:00. Электричество ограничено. Следи за коридорами.",
+      "camera": 0,
+      "time": 1195.759399500006,
+      "status": "RUNNING",
+      "energy": 100,
+      "stage": 0,
+      "left": false
+    }
+  ]
+}
