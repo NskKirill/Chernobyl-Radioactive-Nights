@@ -1,0 +1,319 @@
+{
+  "date": "2026-11-21",
+  "build": "Night1_SOUND_INTRO_20261121.rbxl",
+  "sha256": "BCCBC391697CBE019066132E15DD42561C768DF085A10F95C914D4EF77C59512",
+  "gameCodeCommit": "8d75abb238829f9a94f4b48da0704cceae036a37",
+  "gameCodeChanged": false,
+  "runtimeSourcesMatch": true,
+  "audioFolder": "C:\\Users\\admin\\Downloads\\ChernobylRadioactiveNights_Night1\\outputs\\night1_audio_record_qa_20261121",
+  "captureMethod": "Roblox Studio video_capture with audio=true; decoded by built-in Windows MediaTranscoder into PCM stereo 48000 Hz 16 bit. No new package installed; recordings stay local.",
+  "catalog": {
+    "BunkerHum": {
+      "type": 3,
+      "name": "Eerie Presence 1 (SFX)",
+      "cue": "BunkerHum",
+      "id": 9112775375,
+      "creator": {
+        "Name": "ProSoundEffects",
+        "CreatorTargetId": 7462895450,
+        "Id": 7462895450,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "description": "Eerie Presence, Slowed Traffic, Rumble, Loop\n\nDuration: 56.0 seconds\nCategory: Rumbles\nAsset Type: Sound Effect\n\nCourtesy of Pro Sound Effects."
+    },
+    "Door": {
+      "type": 3,
+      "name": "Metal Latches 2 (SFX)",
+      "cue": "Door",
+      "id": 9116728376,
+      "creator": {
+        "Name": "ProSoundEffects",
+        "CreatorTargetId": 7462895450,
+        "Id": 7462895450,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "description": "Metal Latches, Thunking Pressurized Impacts, Airy Decay, Rattling, Jingling, Deep Thudding\n\nDuration: 1.5 seconds\nCategory: Doors - Hardware\nAsset Type: Sound Effect\n\nCourtesy of Pro Sound Effects."
+    },
+    "Alarm": {
+      "type": 3,
+      "name": "Sci Fi Alarm Buzzy Whining Klaxon 1 (SFX)",
+      "cue": "Alarm",
+      "id": 9118805558,
+      "creator": {
+        "Name": "ProSoundEffects",
+        "CreatorTargetId": 7462895450,
+        "Id": 7462895450,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "description": "Sci-Fi Alarm, Buzzy Whining Klaxon, Rhythmic\n\nDuration: 6.9 seconds\nCategory: Alarms\nAsset Type: Sound Effect\n\nCourtesy of Pro Sound Effects."
+    },
+    "Win": {
+      "cue": "Win",
+      "type": 3,
+      "description": "Computer Beeps and Tones, Synth Hits, Bright\n\nDuration: 0.7 seconds\nCategory: Beeps\nAsset Type: Sound Effect\n\nCourtesy of Pro Sound Effects.",
+      "id": 9113867249,
+      "creator": {
+        "Name": "ProSoundEffects",
+        "CreatorTargetId": 7462895450,
+        "Id": 7462895450,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "name": "Computer Beeps And Tones Synth Hits Bright 2 (SFX)"
+    },
+    "Lose": {
+      "cue": "Lose",
+      "type": 3,
+      "description": "Alarm Buzzer, Constant, Single Bursts at Tail, Airy, Fuzzy, Light Grit\n\nDuration: 1.4 seconds\nCategory: Buzzers\nAsset Type: Sound Effect\n\nCourtesy of Pro Sound Effects.",
+      "id": 9113085764,
+      "creator": {
+        "Name": "ProSoundEffects",
+        "CreatorTargetId": 7462895450,
+        "Id": 7462895450,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "name": "Alarm Buzzer 5 (SFX)"
+    }
+  },
+  "metrics": {
+    "a": {
+      "peakDbFS": -18.26,
+      "seconds": 23.509333333333334,
+      "clippedSamples": 0,
+      "format": {
+        "tag": 1,
+        "channels": 2,
+        "sampleRate": 48000,
+        "bits": 16
+      },
+      "rmsDbFS": -42.02
+    },
+    "b": {
+      "peakDbFS": -16.17,
+      "seconds": 17.173333333333332,
+      "clippedSamples": 0,
+      "format": {
+        "tag": 1,
+        "channels": 2,
+        "sampleRate": 48000,
+        "bits": 16
+      },
+      "rmsDbFS": -42.32
+    }
+  },
+  "hashes": [
+    {
+      "Path": "C:\\Users\\admin\\Downloads\\ChernobylRadioactiveNights_Night1\\outputs\\night1_audio_record_qa_20261121\\clip-a\\probe-audio.wav",
+      "Hash": "E1B7BD155D4E3B4E27478CAB9DFD7634DDB7ABDE2C7D91FBDF13A840E55019F1"
+    },
+    {
+      "Path": "C:\\Users\\admin\\Downloads\\ChernobylRadioactiveNights_Night1\\outputs\\night1_audio_record_qa_20261121\\clip-b\\probe-audio.wav",
+      "Hash": "13E20564FCC8848ABC49D56B71254E49765FDC2357332FD6BC379EF793BD08D4"
+    }
+  ],
+  "clipA": {
+    "segments": {
+      "captureCommandClockSpan": 0.2669454999995651,
+      "markersApproximate": true,
+      "markers": [
+        {
+          "name": "Alarm",
+          "seconds": 5.549
+        },
+        {
+          "name": "Door",
+          "seconds": 6.132
+        },
+        {
+          "name": "Door",
+          "seconds": 6.598
+        },
+        {
+          "name": "Lose",
+          "seconds": 20.415
+        },
+        {
+          "name": "BunkerHum",
+          "seconds": 22.132
+        }
+      ],
+      "backgroundRmsDbFS": -48.5313514348134,
+      "backgroundWindow": [
+        0.5,
+        5.2490000000000006
+      ],
+      "peakDbFS": -18.26,
+      "clippedSamples": 0
+    },
+    "capture": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"status\":\"completed\",\"warnings\":[],\"recording_id\":\"wob-15228000018\",\"artifacts\":{\"manifest\":\"C:\\\\Users\\\\admin\\\\AppData\\\\Local\\\\Roblox\\\\tmp-capture-storage\\\\mcp\\\\A06E4434-5410-4381-86BA-FBDB1209E38E\\\\manifest.json\",\"frame_times\":\"C:\\\\Users\\\\admin\\\\AppData\\\\Local\\\\Roblox\\\\tmp-capture-storage\\\\mcp\\\\A06E4434-5410-4381-86BA-FBDB1209E38E\\\\pts.json\",\"video\":\"C:\\\\Users\\\\admin\\\\AppData\\\\Local\\\\Roblox\\\\tmp-capture-storage\\\\mcp\\\\A06E4434-5410-4381-86BA-FBDB1209E38E\\\\wob-15228000018.mp4\"}}"
+        }
+      ],
+      "isError": false
+    },
+    "game": {
+      "steps": {
+        "1": {
+          "time": 3941.592624099998,
+          "stage": 1,
+          "hour": 0
+        },
+        "2": {
+          "time": 3955.208344300001,
+          "stage": 2,
+          "hour": 0
+        },
+        "3": {
+          "time": 3970.0741479999997,
+          "stage": 3,
+          "hour": 0
+        },
+        "4": {
+          "time": 3971.7912304000056,
+          "stage": 0,
+          "hour": 0
+        }
+      },
+      "cameraOpens": 1,
+      "doors": {
+        "1": {
+          "closed": true,
+          "stage": 2,
+          "time": 3955.792158000011,
+          "door": "RightDoorClosed"
+        },
+        "2": {
+          "closed": false,
+          "stage": 2,
+          "time": 3956.257626400009,
+          "door": "RightDoorClosed"
+        }
+      },
+      "events": {
+        "1": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 0,
+          "message": "Нажми «Начать ночь». Продержись до 06:00.",
+          "camera": 0,
+          "time": 3927.24349600001,
+          "status": "READY",
+          "left": false,
+          "stage": 0,
+          "energy": 100
+        },
+        "2": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 0,
+          "message": "00:00. Электричество ограничено. Следи за коридорами.",
+          "camera": 0,
+          "time": 3927.4600623000006,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 0,
+          "energy": 100
+        },
+        "3": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 0,
+          "message": "Шорох в коридорах. Проверь камеры и закрой нужную дверь.",
+          "camera": 0,
+          "time": 3955.2084472999995,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 2,
+          "energy": 98.75128607650029
+        },
+        "4": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 0,
+          "message": "Subject 06 проник через открытую дверь.",
+          "camera": 0,
+          "time": 3970.074636300007,
+          "status": "LOSE",
+          "left": false,
+          "stage": 3,
+          "energy": 97.80265517749926
+        },
+        "5": {
+          "side": "LEFT",
+          "right": false,
+          "hour": 0,
+          "message": "00:00. Электричество ограничено. Следи за коридорами.",
+          "camera": 0,
+          "time": 3971.7912764000066,
+          "status": "RUNNING",
+          "left": false,
+          "stage": 0,
+          "energy": 100
+        }
+      }
+    }
+  },
+  "clipB": {
+    "markers": {
+      "approximate": true,
+      "captureCommandSpan": 0.21545859999605455,
+      "markers": [
+        {
+          "name": "Alarm",
+          "seconds": 8.783
+        },
+        {
+          "name": "Door",
+          "seconds": 10.016
+        },
+        {
+          "name": "Win",
+          "seconds": 13.167
+        }
+      ]
+    },
+    "capture": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"status\":\"completed\",\"warnings\":[],\"recording_id\":\"wob-15228000020\",\"artifacts\":{\"manifest\":\"C:\\\\Users\\\\admin\\\\AppData\\\\Local\\\\Roblox\\\\tmp-capture-storage\\\\mcp\\\\C7457C91-54C6-4309-9339-60E32E18D4D5\\\\manifest.json\",\"frame_times\":\"C:\\\\Users\\\\admin\\\\AppData\\\\Local\\\\Roblox\\\\tmp-capture-storage\\\\mcp\\\\C7457C91-54C6-4309-9339-60E32E18D4D5\\\\pts.json\",\"video\":\"C:\\\\Users\\\\admin\\\\AppData\\\\Local\\\\Roblox\\\\tmp-capture-storage\\\\mcp\\\\C7457C91-54C6-4309-9339-60E32E18D4D5\\\\wob-15228000020.mp4\"}}"
+        }
+      ],
+      "isError": false
+    },
+    "game": {
+      "result": {
+        "message": "06:00. Рассвет! Ты пережил первую ночь.",
+        "camera": 0,
+        "hour": 6,
+        "status": "WIN",
+        "right": false,
+        "energy": 41.31334734899205,
+        "left": true
+      },
+      "clientSeconds": 360.13586169999326,
+      "deflections": 9
+    }
+  },
+  "publicExperienceLookup": {
+    "publicCount": 0,
+    "matching": [],
+    "nextPageCursor": null
+  },
+  "localPlaceId": 0,
+  "localUniverseId": 0,
+  "nativeInput": "NOT_TESTED: unrelated save dialog observed; minimized window and external-input fence prevented safe native input. Other dialogs were not modified.",
+  "humanListening": "NOT_TESTED: no confirmed audio-perception channel; waveform analysis is not hearing.",
+  "independentNewPlayer": "NOT_TESTED",
+  "playLeftRunning": true,
+  "playLeftRunningReason": "External input was detected in the QA window. Avoided interrupting a potentially user-controlled Play. Only the diagnostic loudness sampler was stopped.",
+  "studioId": "1754e928-b198-45cd-89b7-9cf436974055",
+  "output": "ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type"
+}
